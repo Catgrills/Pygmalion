@@ -1,7 +1,7 @@
 # Pygmalion
 
 
-![screenshot](http://i.imgur.com/TvL9aXJ.jpg)
+![screenshot](http://i.imgur.com/F1xw1EJ.jpg)
 Because we're all perverts on the inside (and outside) ! Use 'Zero' to have a simple yet quite elegant style for Danbooru.
 
 What's an userstyle ?

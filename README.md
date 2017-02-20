@@ -1,9 +1,8 @@
-# Pygmalion
-
+# Pygmalion  
 
 ![screenshot](http://i.imgur.com/F1xw1EJ.jpg)
-Because we're all perverts on the inside (and outside) ! Use 'Zero' to have a simple yet quite elegant style for Danbooru.
-
+Do like all the cool kids out there and install this 4chan style to impress your friends !
+ 
 What's an userstyle ?
 -------------------------------
 

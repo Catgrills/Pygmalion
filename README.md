@@ -1,6 +1,6 @@
 # Pygmalion  
 
-![screenshot](http://i.imgur.com/F1xw1EJ.jpg)
+![screenshot](http://i.imgur.com/AkDvINC.png)
 Do like all the cool kids out there and install this 4chan style to impress your friends !
 
 

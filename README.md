@@ -2,7 +2,8 @@
 
 ![screenshot](http://i.imgur.com/F1xw1EJ.jpg)
 Do like all the cool kids out there and install this 4chan style to impress your friends !
- 
+
+
 What's an userstyle ?
 -------------------------------
 

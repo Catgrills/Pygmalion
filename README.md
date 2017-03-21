@@ -32,4 +32,4 @@ Where can I find your works ?
 
 I have a deviantart page : nicknameisfortheweak.deviantart.com, I also submit my script in pastebin : http://pastebin.com/u/Catgrills
 
-And that's it, I hope you'll enjoy this script if you see this submission ! Like usual, if you have find the script cool or bad, if you have questions, suggestions, there is a section called 'Comments', you can use it everytime !
+And that's it, I hope you'll enjoy this script if you see this submission ! Like usual, if you find the script cool or bad, if you have questions, suggestions, there is a section called 'Comments', you can use it everytime !

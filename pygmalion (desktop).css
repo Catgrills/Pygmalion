@@ -312,7 +312,7 @@ regexp("https?://.*.(google.com/recaptcha/api2).*") {
     .catalog-thread.watched .catalog-thumb, 
     .catalog-thread.watched .werkTyme-filename {
         /** GENERAL/CONTENT/THREAD/WATCH **/
-        border-top: 0px solid rgba(204,101,99,1) !important;
+        border: none !important;
         filter: brightness(50%) !important;
     }
     .catalog-thread.watched .catalog-stats {

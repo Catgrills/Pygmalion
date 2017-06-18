@@ -1,4 +1,4 @@
-# Pygmalion and Pygmalion- (NEW)
+# Pygmalion and Pygmalion-Z (NEW)
 
 ![screenshot](http://i.imgur.com/AkDvINC.png)
 Do like all the cool kids out there and install this 4chan style to impress your friends !

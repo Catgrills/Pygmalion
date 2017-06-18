@@ -1,0 +1,780 @@
+@-moz-document regexp("http://boards.4chan.org/a/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("http://i.imgur.com/tvZVMIS.jpg") !important;
+        background-position: center 32% !important;
+    }
+}
+
+@-moz-document regexp("http://boards.4chan.org/ck/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("http://i.imgur.com/bzsAp6y.jpg") !important;
+        background-position: center !important;
+    }
+}
+
+@-moz-document regexp("http://boards.4chan.org/jp/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("http://i.imgur.com/9afYdpG.jpg") !important;
+        background-position: center !important;
+    }
+}
+
+@-moz-document regexp("http://boards.4chan.org/v/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("http://i.imgur.com/snlxSVs.jpg") !important;
+        background-position: center 65% !important;
+    }
+}
+
+@-moz-document regexp("http://boards.4chan.org/vg/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("http://i.imgur.com/9s6sBiE.jpg") !important;
+        background-position: 40% 20% !important;
+    }
+}
+
+@-moz-document regexp("http://boards.4chan.org/w/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("http://i.imgur.com/GYTIp7H.jpg") !important;
+        background-position: center !important;
+        background-size: cover !important; 
+    }
+}
+
+@-moz-document regexp("http://boards.4chan.org/wg/.*") {
+    .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+        background: url("https://archive-media-0.nyafuu.org/wg/image/1429/65/1429656932042.jpg") !important;
+        background-position: center 52% !important;
+    }
+}
+
+@-moz-document domain("boards.4chan.org"),
+regexp("http://boards.4chan.org/.*/") {
+/* GENERAL */
+/** DESCRIPTION : set the main font and change others elements **/
+        * {
+           font-family: "Roboto", "ぼくたちのゴシック２ボールド"  !important;
+        }
+        html {
+           overflow-x: hidden !important;
+        }
+        body {
+           background: #F0F1F5 !important;
+        }
+        a, 
+        a:hover {
+           text-decoration: none !important;
+           transition: all 0.3s ease-in-out !important;
+        }
+        .notification {
+             background: #216379 !important;
+             border-radius: 2px !important;
+             box-shadow: none !important;
+             color: #FFF !important;
+             padding: 20px 30px !important;    
+             position: fixed !important;
+             top: 30px !important;
+             right: 30px !important;
+             z-index: 99999 !important;
+         }  
+        .notification .message {
+             color: #FFF !important;
+             font-family: "Roboto" !important;
+             font-size: 9.5pt !important;
+             padding: 0px  !important;
+             text-align: left  !important;
+             text-shadow: none !important;
+             position: relative !important;
+         }
+         #notifications .close.fa.fa-times {
+             box-shadow: none !important;
+             color: #000 !important;
+             height: 54px !important;
+             width: 500px !important;
+             opacity: 0 !important;
+             z-index: 10 !important; 
+         }
+         #globalMessage {
+             /*** GLOBAL MESSAGE ***/
+             background: #FEC34E !important;
+             border-radius: 2px !important;
+             color: #FFF !important;
+             font-weight: bold !important;
+             padding: 20px 30px !important;
+             text-align: left !important;
+             position: fixed !important;
+             top: 30px !important;
+             right: 30px !important;
+             z-index: 99999 !important;
+         }
+         #globalMessage a {
+             color: #FFF !important;
+             font-size: 9.5pt !important;
+         }
+         .warning {
+             /*** WARNING ***/
+             color: #212121 !important;
+         }
+   
+/* HEADER BAR */
+/** DESCRIPTION : change the appearance of the headerbar **/
+         #header-bar {
+             background: transparent !important;
+             box-shadow: none !important;
+             padding: 12px !important;
+             margin-top: -10px !important;
+         }
+         .fixed:root #header-bar {
+             background: #ED939D !important;
+             margin-top: 0px !important;
+         }
+         #header-bar a {
+             color: #FFF !important;
+         }
+         #header-bar #board-list a:not(.current) {
+             font-size: 11pt !important;
+             font-weight: 900 !important;
+             padding-right: 2px !important;
+             padding-left: 4px !important;
+         } 
+         #header-bar #custom-board-list .current {
+             border: none !important;
+             font-size: 11pt !important;
+             font-weight: 900 !important;
+         }
+         :root:not(.fixed) #custom-board-list {
+             background: #ED939D !important;
+             width: 100% !important;
+             padding: 20px !important;
+             position: fixed !important;
+             top: -56px !important;
+             left: 0px !important;
+             transition: 0.3s ease-in-out !important;
+             z-index: 999 !important;
+         }
+         :root:not(.fixed) #custom-board-list:hover {
+             top: 0px !important;
+             transition: 0.3s ease-in-out !important;
+         }
+         .fixed:root #header-bar a,
+         :root:not(.fixed) #custom-board-list a {
+             color: #FFF !important;
+         }   
+         :root:not(.fixed) #custom-board-list a.current {
+             background: #ED939D !important;
+             height: 55px !important;
+             width: auto !important;
+             line-height: 50px !important;
+             padding: 0px 26px !important;
+             text-align: center !important;
+             text-transform: uppercase !important;
+             position: absolute !important;
+             top: 60px !important;
+             left: 0px !important;
+         }
+         .fixed:root #header-bar a.current {
+             display: none !important;
+         }
+         :root:not(.fixed) #shortcuts {
+            color: #FFF !important;
+            width: 100% !important;
+            text-align: center !important;
+            position: absolute !important;
+            top: 230px !important;
+            opacity: 1 !important;
+            z-index: 10 !important;
+            margin-left: -16px !important;
+         }
+         .centered-links:root:not(.fixed) #shortcuts  {
+             text-align: left !important;
+             margin-left: -75px !important;
+         }
+         .fixed:root:not(.centered-links) #shortcuts {
+            text-align: right !important;
+         }
+         :root:not(.fixed) #shortcuts a,
+         .fixed:root:not(.centered-links) #shortcuts a,
+         .menu-button:not(.fa-bars) {
+             color: #FFF !important;
+         }
+         #shortcuts .dialog:not(#qr):not(#thread-watcher):not(#header-bar) {
+             border-radius: 2px !important;
+             font-size: 10pt !important;
+             padding: 20px !important;
+         }    
+         #shortcuts .dialog:not(#qr):not(#thread-watcher):not(#header-bar) a {
+             color: #000 !important;
+         }   
+         .fixed-watcher:root #thread-watcher {
+             /*** WATCHER ***/
+             font-size: 9.5pt !important;
+             position: fixed;
+             padding: 10px 20px 20px 20px !important;
+             border-radius: 2px !important;
+             z-index: 9999 !important;
+         }
+         .dialog:not(#qr):not(#thread-watcher):not(#header-bar),
+         #oneechan-options {
+             box-shadow: 0 1px 2px rgba(0, 0, 0, .15) !important;
+             border-radius: 2px !important;
+         }
+         .dialog:not(#qr):not(#thread-watcher):not(#header-bar) .section-container {
+             padding: 10px !important;
+             overflow-y: hidden !important;
+         }
+         .dialog:not(#qr):not(#thread-watcher):not(#header-bar) .section-container fieldset {
+             border: none !important;
+         }
+         #options-container:not(.yui-skin-sam) {
+             box-shadow: none !important;
+         }
+         .tab-label {
+             border-radius: 1px !important;
+         }
+/* RIGHTSIDEBAR */
+/** DESCRIPTION : change the appearance and position of elements of the right sidebar **/
+        .right-sidebar:root body {
+            /*** RIGHT SIDEBAR WIDTH ***/
+            padding-right: 0px;
+        }
+        .right-sidebar:root:not(.mini-sidebar) .boardBanner {
+            background: #444;
+            background-size: cover !important; 
+            border-bottom: 60px solid #34495E !important;
+            height: 200px !important;
+            width: 90% !important;
+            line-height: 200px !important;
+            position: relative !important;
+            margin-top: 85px !important;
+        }
+        .boardBanner .boardTitle {
+            color: #FFF !important;
+            font-family: "Proxima Nova", "KFHimaji"  !important;
+            font-size: 28pt !important;
+            font-weight: bold !important;
+            text-shadow: 3px 3px rgba(117, 83, 108, .7) !important;
+            text-transform: uppercase !important;    
+        }
+
+/* NAVLINKS */
+/** DESCRIPTION : change the appearance and position of the navlinks **/
+        #index-search {
+            background: #074354 !important;
+            border-color: #053542 !important; 
+            padding: 5px 7px !important;
+            color: #FFF !important;
+            font-weight: bold !important;
+            width: 300px !important;
+            text-transform: uppercase !important;
+            position: absolute !important;
+            margin-top: -49px !important;
+            margin-left: 6% !important;
+        }
+        #index-search:hover,
+        #index-search:focus {
+            border-color: #053542 !important; 
+        }
+        #index-options {
+            position: absolute !important;
+            margin-top: -50px !important;
+            right: 106px !important;
+        }
+        #index-options .riceCheck {
+            display: none !important;
+        }
+        #index-sort, 
+        #index-size, 
+        #index-mode {
+            background: #647387 !important;
+            border-color: #212121 !important;
+            color: #FFF !important;
+            font-weight: bold !important;
+            padding: 4px 5px !important;
+            text-transform: uppercase !important;
+            margin-right: -1px !important;
+        }
+   
+/* INDEX MODE */
+/** DESCRIPTION : change elements from catalog, paged, all threads and infinite scrolling mode **/
+        .boardBanner #bannerCnt,
+        .right-sidebar:root .exlinksOptionsLink.entry,
+        .brackets-wrap.indexlink, 
+        .brackets-wrap.archlistlink,
+        .brackets-wrap.bottomlink,
+        #index-last-refresh {
+            /*** RIGHT SIDEBAR'S ELEMENTS ***/
+            display: none !important;
+        }
+
+/* CATALOG */
+/** DESCRIPTION : change elements from catalog **/
+         .catalog-mode:root .board {
+             border: 1px solid #E7E7E7 !important;
+             width: 89.9% !important;
+             padding-top: 50px !important;
+             margin-top: -10px !important;
+             margin-left: 4.9% !important;
+         }
+         .catalog-mode:root .catalog-post {
+             /*** THREAD THUMB ***/
+             background: #343557 !important;
+         }
+         .catalog-mode:root .catalog-thumb {
+             /*** THREAD PICTURE ***/
+             border-radius: 1px !important;
+             box-shadow: none !important;
+             margin-top: -4px !important;
+         }
+         .catalog-mode:root .catalog-thread.watched .catalog-thumb {
+             border: none !important;
+         }
+         .catalog-mode:root .catalog-stats {
+             /*** THREAD STATS ***/
+             background: #7BCAA5 !important;
+             color: #FFF !important;
+             font-size: 8.5pt !important;
+             height: 28px !important;
+             line-height: 26px !important;
+             padding: 1px 9px !important;
+         }
+         .catalog-mode:root .catalog-thread.watched .catalog-stats {
+             background: #F67E7D !important;
+         }
+         .reply-fit-width:root .post .menu-button {
+             color: #FFF !important;
+             opacity: 1 !important;
+             margin-top: -4.5px !important;
+         }
+         .reply-fit-width:root .post .menu-button .dialog:not(#qr):not(#thread-watcher):not(#header-bar) {
+             border-radius: 2px !important;
+             font-size: 10pt !important;
+             padding: 20px !important;
+         }
+         .post .menu-button .dialog:not(#qr):not(#thread-watcher):not(#header-bar) * {
+             font-size: 9.5pt !important;
+         }
+         .has-submenu::after {
+             margin-top: 9px !important;
+         }
+         .catalog-mode:root .subject {
+             /*** THREAD SUBJECT ***/
+             background: #FFF !important;
+             padding: 5px 0px !important;
+             margin-top: -5px !important;
+             margin-right: -13px !important;
+             margin-left: -13px !important;
+         }
+         .catalog-post > .postMessage {
+             /*** THREAD DESCRIPTION ***/
+             background: #FFF !important;
+             max-height: 100px !important;
+             padding: 0px 5px 10px 5px !important;
+             margin-top: -5px !important;
+             margin-bottom: -1px !important;
+             overflow: hidden !important;
+             text-overflow: ellipsis !important;
+             white-space: nowrap !important;
+         }
+    
+/* QUICKREPLAY */
+/** DESCRIPTION : change the appearance of the quickreply **/
+         .vertical-qr:root #qr .move {
+             bottom: 138px;
+         }
+         #qr {
+             background: #FFF !important;
+             border: 1px solid #EBEBEB !important;
+             padding: 10px !important;
+         }
+         .textarea {
+             padding-top: 5px !important;
+         }
+         .field,
+         .field:focus,
+         .field:hover,
+         #qr-file-button,
+         #qr-filename-container, 
+         #file-n-submit input[type="submit"] {
+             background: transparent !important;
+             border: none !important;
+             box-shadow: none !important;
+         }
+         #qr-file-button,
+         #file-n-submit input[type="submit"] {
+             color: #7E7E7E !important;
+             font-size: 9pt !important;
+             font-weight: bold !important;
+         }
+         .field[data-name="name"],
+         .field[data-name="email"],
+         .field[data-name="sub"],
+         .field[data-name="name"]:hover,
+         .field[data-name="email"]:hover,
+         .field[data-name="sub"]:hover,
+         .field[data-name="name"]:focus,
+         .field[data-name="email"]:focus,
+         .field[data-name="sub"]:focus {
+             background: #F3C9BF !important;
+             border: 1px solid #FE8A71 !important;
+             color: #FFF !important;
+             padding: 6px !important;
+         }
+         .captcha-root,
+         .captcha-root:hover {
+             background: transparent !important;
+             border: none !important;
+             padding: 7px 0px 20px 0px !important;
+         }
+         .captcha-counter {
+             background: #F38A8A !important;
+             color: #FFF !important;
+             padding: 10px !important;
+             margin-top: 10px !important;
+         }
+         .captcha-counter * {
+             color: #FFF !important;
+             font-size: 9pt !important;
+             font-weight: bold !important;
+         }
+    
+/* PAGED/ALL THREADS/INFINITE */
+/** DESCRIPTION : change the appearance of the elements in paged, all threads and infinite mode **/
+         .paged-mode .thread,
+         .infinite-mode .thread,
+         .all-pages-mode .thread {
+             background: transparent !important;
+             border: 1px solid #E7E7E7 !important;
+             border-bottom: none !important;
+             padding: 20px 20px 40px 20px !important;
+             margin-top: -10px !important;
+             margin-right: 5.1% !important;
+             margin-left: 4.9% !important;
+         }
+         .paged-mode:last-child .thread,
+         .infinite-mode:last-child .thread, 
+         .all-pages-mode:last-child .thread {
+             border-bottom: 1px solid #E7E7E7 !important;
+             padding-bottom: 30px !important;
+         }
+         .brackets-wrap.cataloglink,
+         .summary,
+         .fa.fa-minus-square {
+             display: none !important;
+         }
+         div.pagelist div.pages {
+             background: #E6DCDB !important;
+             padding: 20px !important;
+             width: 87.5% !important;
+             margin-top: -15px !important;
+             margin-left: 4.9% !important;
+             margin-bottom: 50px !important;
+         }
+         .pages a {
+             color: #FFF !important;
+             font-weight: bold !important;
+             font-size: 9.5pt !important;
+         }
+         .pages.cataloglink {
+             display: none;
+         }
+}
+
+@-moz-document regexp("http(|s):\/\/boards\.4chan\.org\/(.|..|...|....|.....)\/thread/.*") {
+/* GENERAL */
+/** DESCRIPTION : change the width of the thread body **/
+         .board .thread {
+             background: transparent !important;
+             border: 1px solid #E7E7E7 !important;
+             padding: 20px !important;
+             margin-top: -5px !important;
+             margin-right: 5.1% !important;
+             margin-left: 4.9% !important;
+         }
+    
+/* NAVLINKS */
+/** DESCRIPTION: change navlinks related elements **/
+         #update-timer {
+             display: none !important;
+         }
+         :root.fixed #shortcuts #shortcut-stats {
+             color: #FFF !important;
+             font-size: 9.5pt !important;
+             font-weight: bold !important;
+         }
+         :root:not(.fixed) #shortcuts #shortcut-stats {
+             background: #074354 !important;
+             border: 1px solid #053542 !important; 
+             font-size: 9.5pt !important;
+             font-weight: bold !important;
+             padding: 5px 50px 5px 10px !important;
+             position: absolute !important;
+             left: 100px !important;
+             margin-top: 84px !important;
+         }
+         .centered-links:root:not(.fixed)  #shortcuts #shortcut-stats {
+             left: -637px !important;
+         }
+         :root:not(.fixed) #shortcuts .new {
+             color: #40BC86 !important;
+             font-size: 9.5pt !important;
+             font-weight: bold !important;
+             position: absolute !important;
+             left: 218px !important;
+             margin-top: 77px !important;
+             z-index: 9999 !important;
+         }
+         :root.fixed #shortcuts .new {
+             color: #C6F0DA !important;
+             font-size: 9.5pt !important;
+             font-weight: bold !important;
+         }
+         .navLinks.desktop {
+             background: #647387 !important;
+             border: 1px solid #212121 !important;
+             color: transparent !important;
+             padding: 5px 10px !important;
+             position: absolute !important;
+             margin-top: -45px !important;
+             right: 104px !important;
+             text-align: left !important;
+          }
+         .navLinks.navLinksBot.desktop {
+             visibility: hidden;
+         }
+         .navLinks.desktop a {
+             color: #FFF !important;
+             border-right: 1px solid #212121 !important;
+             font-size: 9pt !important;
+             font-weight: bold !important;
+             padding: 5px 45px 5px 0px !important;
+             text-transform: uppercase !important;
+         }
+         .navLinks.desktop a:last-child {
+             border: none !important;
+         }
+}
+
+/* THREAD */
+/** DESCRIPTION : tweak the elements of the thread **/
+         .fa-angle-down::before {
+             color: #7E7E7E !important;
+             margin-top: 7px !important;
+             margin-right: 10px !important;
+         }
+         .quotelink {
+             color: #DC626F !important;
+             font-weight: bold !important;
+         }
+         .opContainer.opContainer {
+             /*** OP ***/
+             background: #FFF !important;
+             font-size: 9.5pt !important;
+             padding: 20px 0px 20px 20px !important;
+             margin-top: 14px !important;
+             margin-right: 6px !important;
+             margin-left: 8px !important;
+         }
+         .opContainer.opContainer .fa-angle-down::before {
+             color: transparent !important;
+         }
+         .reply-hide:root .thread > .threadContainer {
+             /*** THREAD CONTAINER ***/
+             margin-left: 8px !important;
+         }
+         .threadContainer {
+             margin-left: 10px !important;
+             border-left: 1px dashed #D2D7D3 !important;
+         }
+         .reply-fit-width:root .reply.post {
+             /*** POST ***/
+             border-radius: 1px !important;
+             font-size: 9.5pt !important;
+             padding-bottom: 10px !important;
+             margin-right: 6px !important;
+             margin-bottom: 6px !important;
+         }
+         .post-info:root .reply > .postInfo {
+             background: #ECF0F1;
+             border: none !important;
+             border-radius: 1px !important;
+             box-shadow: none !important;
+             width: auto !important;
+             padding: 12px !important;
+             margin-bottom: 20px !important;
+         }
+         .nameBlock:not(.capcodeMod) > .name, 
+         .com, 
+         .post-author {
+             color: #28A9BC !important;
+             margin-right: 8px !important;
+             margin-left: 6px !important;
+         }
+         .postNum {
+             color: #92DBC7 !important;
+             font-weight: bold !important;
+             margin-left: 8px !important;
+         }
+         .dateTime {
+             color: #7E7E7E !important;
+             font-weight: bold !important;
+         }
+         :root:not(.ua-webkit):not(.ua-blink) .fileText {
+             font-size: 9pt !important;
+             margin-top: -10px !important;
+             margin-bottom: 10px !important;
+         }
+         .post-info.rounded-corners:root .reply > .postInfo, 
+         .rounded-corners:root #qr, 
+         .rounded-corners.vertical-qr:root:root #qr > .move,
+         .rounded-corners:root .fileThumb img:not(.full-image) {
+             border-radius: 1px !important;
+         } 
+         .fa.fa-minus-square-o {
+             /*** MINIMIZE ICON ***/
+             display: none !important;
+         }
+         .highlight-own:root .yourPost > .reply {
+             border-left: 1px solid #FFF !important;
+             border-bottom: 4px solid #F1A49F !important;
+         }
+        .highlight-you:root .quotesYou > .reply {
+             border-left: 1px solid #FFF !important;
+             border-bottom: 4px solid rgba(44,100,160,1) !important;
+        }
+        .postNum a[href$="00');"]:after,
+        .postNum a[href$="11');"]:after,
+        .postNum a[href$="22');"]:after,
+        .postNum a[href$="33');"]:after,
+        .postNum a[href$="44');"]:after,
+        .postNum a[href$="55');"]:after,
+        .postNum a[href$="66');"]:after,
+        .postNum a[href$="77');"]:after,
+        .postNum a[href$="88');"]:after,
+        .postNum a[href$="99');"]:after {
+            /*** DUBS ***/
+            content: " ✔" !important;
+            color: #4caf50 !important;
+            font-weight: bold !important;
+            font-size: 14px !important;
+            position: relative !important;
+            top: -1px !important;
+        }
+        .postNum a[href$="000');"]:after,
+        .postNum a[href$="111');"]:after,
+        .postNum a[href$="222');"]:after,
+        .postNum a[href$="333');"]:after,
+        .postNum a[href$="444');"]:after,
+        .postNum a[href$="555');"]:after,
+        .postNum a[href$="666');"]:after,
+        .postNum a[href$="777');"]:after,
+        .postNum a[href$="888');"]:after,
+        .postNum a[href$="999');"]:after {
+            /*** TRIPS ***/
+            content: " ✔✔✔" !important;
+            color: #ff9800 !important;
+        }
+        .postNum a[href$="0000');"]:after,
+        .postNum a[href$="1111');"]:after,
+        .postNum a[href$="2222');"]:after,
+        .postNum a[href$="3333');"]:after,
+        .postNum a[href$="4444');"]:after,
+        .postNum a[href$="5555');"]:after,
+        .postNum a[href$="6666');"]:after,
+        .postNum a[href$="7777');"]:after,
+        .postNum a[href$="8888');"]:after,
+        .postNum a[href$="9999');"]:after {
+            /*** QUADS ***/
+            content: " ✔✔✔✔" !important;
+            color: #f44336 !important;
+        }
+        .postNum a[href$="00000');"]:after,
+        .postNum a[href$="11111');"]:after,
+        .postNum a[href$="22222');"]:after,
+        .postNum a[href$="33333');"]:after,
+        .postNum a[href$="44444');"]:after,
+        .postNum a[href$="55555');"]:after,
+        .postNum a[href$="66666');"]:after,
+        .postNum a[href$="77777');"]:after,
+        .postNum a[href$="88888');"]:after,
+        .postNum a[href$="99999');"]:after {
+            content: " ✔✔✔✔✔" !important;
+            color: #e040fb !important;
+        }
+        .postNum a[href$="000000');"]:after,
+        .postNum a[href$="111111');"]:after,
+        .postNum a[href$="222222');"]:after,
+        .postNum a[href$="333333');"]:after,
+        .postNum a[href$="444444');"]:after,
+        .postNum a[href$="555555');"]:after,
+        .postNum a[href$="666666');"]:after,
+        .postNum a[href$="777777');"]:after,
+        .postNum a[href$="888888');"]:after,
+        .postNum a[href$="999999');"]:after {
+            content: " ✔✔✔✔✔✔" !important;
+            color: #651fff !important;
+        }
+        .postNum a[href$="0000000');"]:after,
+        .postNum a[href$="1111111');"]:after,
+        .postNum a[href$="2222222');"]:after,
+        .postNum a[href$="3333333');"]:after,
+        .postNum a[href$="4444444');"]:after,
+        .postNum a[href$="5555555');"]:after,
+        .postNum a[href$="6666666');"]:after,
+        .postNum a[href$="7777777');"]:after,
+        .postNum a[href$="8888888');"]:after,
+        .postNum a[href$="9999999');"]:after {
+            content: " ✔✔✔✔✔✔✔" !important;
+            color: #304ffe !important;
+        }
+        .postNum a[href$="00000000');"]:after,
+        .postNum a[href$="11111111');"]:after,
+        .postNum a[href$="22222222');"]:after,
+        .postNum a[href$="33333333');"]:after,
+        .postNum a[href$="44444444');"]:after,
+        .postNum a[href$="55555555');"]:after,
+        .postNum a[href$="66666666');"]:after,
+        .postNum a[href$="77777777');"]:after,
+        .postNum a[href$="88888888');"]:after,
+        .postNum a[href$="99999999');"]:after {
+            content: " ✔✔✔✔✔✔✔✔" !important;
+            color: #2196f3 !important;
+        }
+        .postNum a[href$="000000000');"]:after,
+        .postNum a[href$="111111111');"]:after,
+        .postNum a[href$="222222222');"]:after,
+        .postNum a[href$="333333333');"]:after,
+        .postNum a[href$="444444444');"]:after,
+        .postNum a[href$="555555555');"]:after,
+        .postNum a[href$="666666666');"]:after,
+        .postNum a[href$="777777777');"]:after,
+        .postNum a[href$="888888888');"]:after,
+        .postNum a[href$="999999999');"]:after {
+            content: " ✔✔✔✔✔✔✔✔✔" !important;
+            color: #000000 !important;
+        }
+        a[href="#top"] {
+             /*** TOP LINK ***/
+             position: fixed !important;
+             right: -7px !important;
+             bottom: 20px !important;
+             visibility: hidden;         
+         }
+         a[href="#top"]:hover {
+             opacity: .8 !important;
+         }
+         a[href="#top"]::before {
+             background-color: #60646D !important;
+             background-image: url("http://i.imgur.com/aS0cxCz.png") !important;
+             background-position: center !important;
+             background-repeat: no-repeat !important;
+             background-size: 15px auto !important;
+             border-radius: 2px !important;
+             color: transparent !important;
+             content: "dd" !important;
+             height: 40px !important;
+             width: 40px !important;
+             position: absolute !important;
+             bottom: 0px !important;
+             margin-left: -2px !important;
+             visibility: visible !important;
+         }

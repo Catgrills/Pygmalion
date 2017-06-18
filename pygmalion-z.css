@@ -249,7 +249,7 @@ regexp("http://boards.4chan.org/.*/") {
             padding-right: 0px;
         }
         .right-sidebar:root:not(.mini-sidebar) .boardBanner {
-            background: #444;
+            background: no-repeat url("http://i.imgur.com/QEKEvkx.jpg") center;
             background-size: cover !important; 
             border-bottom: 60px solid #34495E !important;
             height: 200px !important;

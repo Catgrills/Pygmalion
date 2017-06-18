@@ -1,8 +1,10 @@
-# Pygmalion  
+# Pygmalion and Pygmalion- (NEW)
 
 ![screenshot](http://i.imgur.com/AkDvINC.png)
 Do like all the cool kids out there and install this 4chan style to impress your friends !
 
+![screenshot](http://i.imgur.com/BJrw8nd.jpg)
+A rewrite of Pygmalion called Pygmalion-Z !
 
 What's an userstyle ?
 -------------------------------
@@ -17,6 +19,11 @@ What do 'Pygmalion' change ?
 - in the catalog, the description (ie meta, subject, teaser, etc) are more visible with a white background, the dropdown icon is now always visible because it adds more element and it'll be easier to hide/watch/report/archive/etc a specific thread, the arhive button was removed because I don't use this shit, and what's more the OP's picture of a thread in your watchlist will be darken.
 - in the paged/infinite threads/all threads, nothing too fancy, wanted to have the same 'design' as the others pages, only thing I can mention is the fact that I removed the minimize icon in the reply posts, but kept it for each thread.
 - in the thread, changed the colors of the user's name, the time, the number, the quotelink, etc to make it more modern I guess, plus for dubs/trips/quads/etc there will be 'check' icon(s) (I copy/paste the code made by commit-sudoku from the script called 'Zairyou', https://github.com/commit-sudoku/zairyou, I also borrowed the code for the notifications), other than that the post who quote you will have a blue border on the left, and your post will have a red border on the left, the last post you saw will have a black border at the top. The 'top' button was replaced by an icon (the same as tumblr) and will scroll with the page. The quick reply wasn't changed (I didn't have any ideas for it), just plain white.
+
+What do 'Pygmalion-Z' change ?
+-------------------------------
+
+Pygmalion-Z is actually a better version of Pygmalion (in my opinion at least), it's less buggy, more aesthetic and less white ('cuz I love me some colors). The font used and the settings of 4chanX/OneeChan are the same as Pygmalion.
 
 How to install it ?
 -------------------------------

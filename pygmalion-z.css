@@ -80,7 +80,10 @@
         }
         form[enctype="multipart/form-data"],
         .middlead.center,
-        .ss-sidebar:root body::before {
+        .ss-sidebar:root body::before,
+        .brackets-wrap.pass-link-container,
+        .hashlink,
+        #navlinks a[href="javascript:;"] {
             /*** OTHERS ***/
             display: none !important;
         }
@@ -93,6 +96,7 @@
         #header-bar {
             background: transparent !important;
             box-shadow: none !important;
+            color: transparent !important;
             padding: 12px !important;
             margin-top: -10px !important;
         }
@@ -102,6 +106,25 @@
         }
         #header-bar a {
             color: #FFF !important;
+        }
+        :root:not(.fixed) #board-list {
+            background: #ED939D !important;
+            padding: 20px !important;
+            word-spacing: 0px !important;
+            position: fixed !important;
+            top: 0px !important;
+            left: 0px !important;
+            z-index: 99999 !important;
+        }
+        #full-board-list {
+            color: transparent !important;
+        }
+        #header-bar #full-board-list a:not(.current) {
+            color: #FFF !important;
+            margin-right: -5px !important;
+        }
+        #header-bar #full-board-list a.current {
+            display: none !important;
         }
         #header-bar #board-list a:not(.current) {
             font-size: 11pt !important;
@@ -116,6 +139,7 @@
         }
         :root:not(.fixed) #custom-board-list {
             background: #ED939D !important;
+            color: transparent;
             width: 100% !important;
             padding: 20px !important;
             position: fixed !important;
@@ -227,32 +251,31 @@
             margin-top: 85px !important;
         }
         .board_a .boardBanner {
-            background: url("https://i.imgur.com/tvZVMIS.jpg") !important;
+            background-image: url("https://i.imgur.com/tvZVMIS.jpg") !important;
             background-position: center 32% !important;
         }
         .board_ck .boardBanner {
-            background: url("https://i.imgur.com/bzsAp6y.jpg") !important;
+            background-image: url("https://i.imgur.com/bzsAp6y.jpg") !important;
             background-position: center !important;
         }
         .board_jp .boardBanner {
-            background: url("https://i.imgur.com/9afYdpG.jpg") !important;
+            background-image: url("https://i.imgur.com/9afYdpG.jpg") !important;
             background-position: center !important;
         }
         .board_v .boardBanner {
-            background: url("https://i.imgur.com/snlxSVs.jpg") !important;
+            background-image: url("https://i.imgur.com/snlxSVs.jpg") !important;
             background-position: center 65% !important;
         }
         .board_vg .boardBanner {
-            background: url("https://i.imgur.com/9s6sBiE.jpg") !important;
+            background-image: url("https://i.imgur.com/9s6sBiE.jpg") !important;
             background-position: 40% 20% !important;
         }
         .board_w .boardBanner {
-            background: url("https://i.imgur.com/GYTIp7H.jpg") !important;
+            background-image: url("https://i.imgur.com/GYTIp7H.jpg") !important;
             background-position: center !important;
-            background-size: cover !important; 
         }
         .board_wg .boardBanner {
-            background: url("https://archive-media-0.nyafuu.org/wg/image/1429/65/1429656932042.jpg") !important;
+            background-image: url("https://archive-media-0.nyafuu.org/wg/image/1429/65/1429656932042.jpg") !important;
             background-position: center 52% !important;
         }
         .boardBanner .boardTitle {
@@ -490,6 +513,10 @@
         .pages.cataloglink {
             display: none;
         }
+        .prev,
+        .next {
+            display: none !important;
+        }
 
 /* THREAD */
 /** DESCRIPTION : tweak the elements of the thread page **/
@@ -611,8 +638,10 @@
             margin-right: 6px !important;
             margin-bottom: 6px !important;
         }
+        .recolor-even:root .thread > .replyContainer:nth-of-type(2n):not(.hidden) .post {
+            background: #FDFDFD !important;
+        }
         #hoverUI .reply.post {
-            /*** POST ***/
             margin-right: 0px !important;
         }
         .post-info:root .reply > .postInfo {

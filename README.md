@@ -13,7 +13,8 @@ A custom stylesheet (or userstyles) a script with a bunch of pseudo-code that wi
 Instruction
 -------------------------------
 
-<strong>Step 1 : Install Stylish</strong>
+<strong>Step 1 : Install Stylish</strong> 
+
 <span>Depending of your browser.</span>
 <ol>
 <li>for <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Mozilla Firefox</a></li>
@@ -36,7 +37,8 @@ Instruction
 <li>Import in 4chan-X and OneeChan settings the files you'll in this <a href=" https://mega.nz/#F!958lRB7C!HZKGTiGsDpBmazca5v7JMA">link</a></li>
 </ol>
 
-<strong>Step 4 : Install the font </strong>
+<strong>Step 4 : Install the font </strong> 
+
 I use several fonts for my custom stylesheet.
 <ol>
 <li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>

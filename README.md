@@ -1,42 +1,63 @@
-# Pygmalion and Pygmalion-Z (NEW)
+# Pygmalion-Z
 
-![screenshot](http://i.imgur.com/AkDvINC.png)
-Do like all the cool kids out there and install this 4chan style to impress your friends !
+![screenshot](https://i.imgur.com/jYsxTua.jpg)
+Preview of Pygmalion-Z.
 
-![screenshot](http://i.imgur.com/BJrw8nd.jpg)
-A rewrite of Pygmalion called Pygmalion-Z !
-
-What's an userstyle ?
+About
 -------------------------------
 
-Simply put, it's a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff. To use it, there is an add-on called 'Stylish' for the majority of the browser, so if you are on Chrome, Firefox, Opera and such go for it ! I also recommend you to go to userstyles.org (userstyles.org/) where you can found a lot of styles for a lot of website.
+Pygmalion-Z is a custom stylesheet for 4chan.
 
-What do 'Pygmalion' change ?
+A custom stylesheet (or userstyles) a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
+
+Instruction
 -------------------------------
 
- If you're looking for a simple and cool theme for 4chan, you should give this script a try, here what you'll have :
-- in general, we have a fucking banner again, but who doesn't like banner, right ? And of course, if you don't like the one I used you'll be able to change it by modifying the value of 'background-image' in /** GENERAL/BANNER/CUSTOM **/ (I added custom banner for the board I go to frequently, you can find them at the end of the script), with this the board's title and the index buttons were changed and moved in the banner section, the default blue/green/whatever background was changed for a light grey, I chnaged the color of the navbar (I do think it looks sexier now), the real banners of 4chan were removed (I do like them tho, just don't know where to place them so I removed them), also the search bar is no more because F3 is superior imo, same situation for the 'bottom', return', 'resfresh' buttons .
-- in the catalog, the description (ie meta, subject, teaser, etc) are more visible with a white background, the dropdown icon is now always visible because it adds more element and it'll be easier to hide/watch/report/archive/etc a specific thread, the arhive button was removed because I don't use this shit, and what's more the OP's picture of a thread in your watchlist will be darken.
-- in the paged/infinite threads/all threads, nothing too fancy, wanted to have the same 'design' as the others pages, only thing I can mention is the fact that I removed the minimize icon in the reply posts, but kept it for each thread.
-- in the thread, changed the colors of the user's name, the time, the number, the quotelink, etc to make it more modern I guess, plus for dubs/trips/quads/etc there will be 'check' icon(s) (I copy/paste the code made by commit-sudoku from the script called 'Zairyou', https://github.com/commit-sudoku/zairyou, I also borrowed the code for the notifications), other than that the post who quote you will have a blue border on the left, and your post will have a red border on the left, the last post you saw will have a black border at the top. The 'top' button was replaced by an icon (the same as tumblr) and will scroll with the page. The quick reply wasn't changed (I didn't have any ideas for it), just plain white.
+<strong>Step 1 : Install Stylish</strong>
+<span>Depending of your browser.</span>
+<ol>
+<li>for <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Mozilla Firefox</a></li>
+<li>for <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Google Chrome</a></li>
+<li>for <a href="https://addons.opera.com/en/extensions/details/stylish/">Opera</a></li>
+<li>for <a href="http://sobolev.us/stylish/">Safari</a></li>
+<li> for <a href="https://play.google.com/store/apps/details?id=ru.pmmlabs.stylish&amp;hl=en">Dolphin</a></li>
+</ol>
 
-What do 'Pygmalion-Z' change ?
+<strong>Step 2 : Install the script </strong>
+<ol>
+<li> Via <a href="https://userstyles.org/styles/144764/pygmalion-z-4chan-css">userstyles</a> : click the button <i>install Style</i> and it's done.</li>
+<li> Or <a href="https://pastebin.com/EPjYX3yH">manually</a> : create a new style in Stylish and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+</ol>
+
+<strong> Step 3 : Install plugins and scripts </strong>
+<ol>
+<li>First, install <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> (for Mozilla Firefox) or <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">Tampermonkey</a> (for Google Chrome) </li>
+<li>Second, install <a href="https://github.com/ccd0/4chan-x">4chan-x</a> and <a href="github.com/Nebukazar/OneeChan">OneeChan</a></li>
+<li>Import in 4chan-X and OneeChan settings the files you'll in this <a href=" https://mega.nz/#F!958lRB7C!HZKGTiGsDpBmazca5v7JMA">link</a></li>
+</ol>
+
+<strong>Step 4 : Install the font </strong>
+I use several fonts for my custom stylesheet.
+<ol>
+<li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
+<li> <a href="https://mega.nz/#F!x0kEyB6Q!wlyJiWObHX4U9oSW7IRgmA">Proxima Nova</a></li>
+<li> <a href="http://www.freejapanesefont.com/bokutachi-gothic-2-bold/">Bokutachi no Gothic 2 </a></li>
+<li> <a href="http://www.freejapanesefont.com/kf-himaji/">KFHimaji</a></li>
+</ol>
+
+<strong>Step 5 : Show your appreciation </strong>
+<ol>
+<li>Feel free to comment this submission (critique, suggestion, compliment, etc).</li>
+<li>If you like my works, don't hesitate to watch me.</li>
+<li>You can share it, but don't forget to mention me.</li>
+</ol>
+
+Trivia
 -------------------------------
 
-Pygmalion-Z is actually a better version of Pygmalion (in my opinion at least), it's less buggy, more aesthetic and less white ('cuz I love me some colors). The font used and the settings of 4chanX/OneeChan are the same as Pygmalion.
+I decided to name the script Pygmalion-Z because the mascot of 4chan Yotsuba is a little girl with green hair holding a clover, it reminds me of the famous play Pygmalion and the flower Girl Eliza Doolittle (not as cute as Yotsuba). The Z makes it cooler, like those series where they put a Z to the original title for the second season.
 
-How to install it ?
+Report
 -------------------------------
 
-After installing 'Stylish', you'll have to 'write a new style', copy/paste the code in 'pygmalion.css', name the style and then save ! Before installing it, I suggest you :
-
-- (THIS IS IMPORTANT) this script will work perfectly if you install 4chan X (github.com/ccd0/4chan-x) and OneeChan (github.com/Nebukazar/OneeChan), this won't be a difficult task to do, you'll only have to click some buttons. After that (because it's not finished unfortunately), you'll have to import two scripts, one for 4chan X and the other for OneeChan, you'll be able to download them in this link : mega:#F!958lRB7C!HZKGTiGsDpBmazca5v7JMA. To import them, for the first one (ie 4chanX), click on the navbar the 'spanner' icon which represents 4chanX Settings, then click import and select the file in question; for the second one (ie OneeChan), click on the navbar the 'gears' icon which represents OneeChan Settings, then click import and select the second file. And finally, don't close OneeChan Settings and click the 'Themes' tab : select the the 'Edit' button when you hover the 'Muted Seaweed' theme and change the value of each parts to match the ones in the following picture (i.imgur.com/i46e8Gc.png).
-- to install the font I used, namely 'Roboto' (https://www.fontsquirrel.com/fonts/roboto) and if you want Meiryo, all of them are free so don't be shy.
-- download Adblock Plus to kill the ads
-
-Where can I find your works ?
--------------------------------
-
-I have a deviantart page : nicknameisfortheweak.deviantart.com, I also submit my script in pastebin : http://pastebin.com/u/Catgrills
-
-And that's it, I hope you'll enjoy this script if you see this submission ! Like usual, if you find the script cool or bad, if you have questions, suggestions, there is a section called 'Comments', you can use it everytime !
+This script isn't perfect, some parts of the site weren't modified such as the section in Shop or the F.A.Q section. If you find some elements that weren't tweaked or that you simply want to modify or re-add an element that was removed, don't hesitate to report it in the comments.

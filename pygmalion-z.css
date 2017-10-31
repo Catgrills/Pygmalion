@@ -10,6 +10,9 @@
         body {
             background: #F0F1F5 !important;
         }
+        #skellington {
+            display: none !important;
+        }
         a, 
         a:hover {
             border: none !important;
@@ -242,6 +245,7 @@
         }
         .boardBanner {
             background-image: var(--banner);
+            background-position: center 32% !important;
             background-size: cover !important; 
             border-bottom: 60px solid #34495E !important;
             height: 200px !important;
@@ -251,11 +255,11 @@
             margin-top: 85px !important;
         }
         .board_a .boardBanner {
-            background-image: url("https://i.imgur.com/tvZVMIS.jpg") !important;
-            background-position: center 32% !important;
+            background-image: url("https://i.imgur.com/fVNJ3IR.jpg") !important;
+            background-position: center 70% !important;
         }
-        .board_ck .boardBanner {
-            background-image: url("https://i.imgur.com/bzsAp6y.jpg") !important;
+        .board_h .boardBanner {
+            background-image: url("https://i.imgur.com/jUc7rxF.jpg") !important;
             background-position: center !important;
         }
         .board_jp .boardBanner {
@@ -267,15 +271,15 @@
             background-position: center 65% !important;
         }
         .board_vg .boardBanner {
-            background-image: url("https://i.imgur.com/9s6sBiE.jpg") !important;
-            background-position: 40% 20% !important;
+            background-image: url("https://i.imgur.com/Qz4792a.jpg") !important;
+            background-position: center 25% !important;
         }
         .board_w .boardBanner {
-            background-image: url("https://i.imgur.com/GYTIp7H.jpg") !important;
-            background-position: center !important;
+            background-image: url("https://i.imgur.com/o6iX8WN.jpg") !important;
+            background-position: center 35% !important;
         }
         .board_wg .boardBanner {
-            background-image: url("https://archive-media-0.nyafuu.org/wg/image/1429/65/1429656932042.jpg") !important;
+            background-image: url("https://i.imgur.com/Tgx9FjO.jpg") !important;
             background-position: center 52% !important;
         }
         .boardBanner .boardTitle {
@@ -283,8 +287,9 @@
             font-family: "Proxima Nova", "KFHimaji" !important;
             font-size: 28pt !important;
             font-weight: bold !important;
+            height: 200px !important;
             text-shadow: 3px 3px rgba(117, 83, 108, .7) !important;
-            text-transform: uppercase !important;    
+            text-transform: uppercase !important;          
         }
 
 /* NAVLINKS */
@@ -482,12 +487,6 @@
             margin-right: 5.1% !important;
             margin-left: 4.9% !important;
         }
-        .paged-mode:last-child .thread,
-        .infinite-mode:last-child .thread, 
-        .all-pages-mode:last-child .thread {
-            border-bottom: 1px solid #E7E7E7 !important;
-            padding-bottom: 30px !important;
-        }
         .brackets-wrap.cataloglink,
         .summary,
         .fa.fa-minus-square {
@@ -515,6 +514,9 @@
         }
         .prev,
         .next {
+            display: none !important;
+        }
+        .hide-thread-button {
             display: none !important;
         }
 

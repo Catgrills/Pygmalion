@@ -111,7 +111,7 @@
             color: #FFF !important;
         }
         :root:not(.fixed) #board-list {
-            background: #ED939D !important;
+            background: #8199A3 !important;
             padding: 20px !important;
             word-spacing: 0px !important;
             position: fixed !important;
@@ -141,7 +141,7 @@
             font-weight: 900 !important;
         }
         :root:not(.fixed) #custom-board-list {
-            background: #ED939D !important;
+            background: #8199A3 !important;
             color: transparent;
             width: 100% !important;
             padding: 20px !important;
@@ -158,9 +158,10 @@
         .fixed:root #header-bar a,
         :root:not(.fixed) #custom-board-list a {
             color: #FFF !important;
+            font-stretch: condensed !important;
         }   
         :root:not(.fixed) #custom-board-list a.current {
-            background: #ED939D !important;
+            background: #8199A3 !important;
             height: 55px !important;
             width: auto !important;
             line-height: 50px !important;
@@ -255,32 +256,64 @@
             margin-top: 85px !important;
         }
         .board_a .boardBanner {
-            background-image: url("https://i.imgur.com/fVNJ3IR.jpg") !important;
+            background-image: url("https://i.imgur.com/ODay3dK.jpg") !important;
+            background-position: center !important;
+        }
+        .board_c .boardBanner {
+            background-image: url("https://i.imgur.com/hVKOkER.jpg") !important;
+            background-position: center !important;
+        }
+        .board_ck .boardBanner {
+            background-image: url("https://i.imgur.com/CVNUbeL.jpg") !important;
+            background-position: center 38% !important;
+        }
+        .board_e .boardBanner {
+            background-image: url("https://i.imgur.com/6w0BVwI.jpg") !important;
+            background-position: center 40% !important;
+        }
+        .board_g .boardBanner {
+            background-image: url("https://i.imgur.com/jMXTZ2D.jpg") !important;
+            background-position: center 40% !important;
+        }
+        .board_gif .boardBanner {
+            background-image: url("http://i.4cdn.org/wg/1510414778158.jpg") !important;
             background-position: center 70% !important;
+        }
+        .board_ic .boardBanner {
+            background-image: url("https://i.imgur.com/gGBPsJp.jpg") !important;
+            background-position: center !important;
         }
         .board_h .boardBanner {
             background-image: url("https://i.imgur.com/jUc7rxF.jpg") !important;
             background-position: center !important;
         }
         .board_jp .boardBanner {
-            background-image: url("https://i.imgur.com/9afYdpG.jpg") !important;
-            background-position: center !important;
+            background-image: url("https://i.imgur.com/OYMZ9sk.jpg") !important;
+            background-position: center 30% !important;
         }
         .board_v .boardBanner {
-            background-image: url("https://i.imgur.com/snlxSVs.jpg") !important;
-            background-position: center 65% !important;
+            background-image: url("https://i.imgur.com/sonA6nA.jpg") !important;
+            background-position: center 30% !important;
         }
         .board_vg .boardBanner {
             background-image: url("https://i.imgur.com/Qz4792a.jpg") !important;
             background-position: center 25% !important;
         }
+        .board_vp .boardBanner {
+            background-image: url("http://gzsihai.com/data/out/250/im-500196369.png") !important;
+            background-position: center 60% !important;
+        }
         .board_w .boardBanner {
-            background-image: url("https://i.imgur.com/o6iX8WN.jpg") !important;
-            background-position: center 35% !important;
+            background-image: url("https://i.imgur.com/hbMbcDA.jpg") !important;
+            background-position: center 70% !important;
         }
         .board_wg .boardBanner {
             background-image: url("https://i.imgur.com/Tgx9FjO.jpg") !important;
             background-position: center 52% !important;
+        }
+        .board_wsg .boardBanner {
+            background-image: url("https://i.imgur.com/Oh3nsgh.jpg") !important;
+            background-position: center 70% !important;
         }
         .boardBanner .boardTitle {
             color: #FFF !important;
@@ -291,6 +324,9 @@
             text-shadow: 3px 3px rgba(117, 83, 108, .7) !important;
             text-transform: uppercase !important;          
         }
+		.boardSubtitle {
+            display: none !important;
+		}
 
 /* NAVLINKS */
 /** DESCRIPTION : change the appearance and position of the navlinks **/
@@ -324,6 +360,8 @@
             background: #647387 !important;
             border-color: #212121 !important;
             color: #FFF !important;
+            font-size: 10pt !important;
+			font-stretch: condensed !important;
             font-weight: bold !important;
             padding: 4px 5px !important;
             text-transform: uppercase !important;
@@ -345,11 +383,11 @@
 /* CATALOG */
 /** DESCRIPTION : change elements from catalog **/
         .catalog-mode:root .board {
-            border: 1px solid #E7E7E7 !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
             width: 89.9% !important;
             padding-top: 50px !important;
             margin-top: -10px !important;
-            margin-left: 4.9% !important;
+            margin-left: 5% !important;
         }
         .catalog-mode:root .catalog-post {
             /*** THREAD THUMB ***/
@@ -395,6 +433,10 @@
         .catalog-mode:root .subject {
             /*** THREAD SUBJECT ***/
             background: #FFF !important;
+            color: #60646D !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;
             padding: 5px 0px !important;
             margin-top: -5px !important;
             margin-right: -13px !important;
@@ -403,6 +445,7 @@
         .catalog-post > .postMessage {
             /*** THREAD DESCRIPTION ***/
             background: #FFF !important;
+			font-size: 10pt !important;
             max-height: 100px !important;
             padding: 0px 5px 10px 5px !important;
             margin-top: -5px !important;
@@ -411,7 +454,22 @@
             text-overflow: ellipsis !important;
             white-space: nowrap !important;
         }
-    
+		#hidden-label {
+            /*** THREAD HIDDEN THREAD ***/
+         	background: #444B54 !important;
+    		border-radius: 2px !important;
+    		color: #FFF !important;
+    		font-family: "Roboto";
+    		font-size: 10.5pt !important;
+    		font-stretch: condensed !important;
+    		font-weight: bold !important;
+    		padding: 10px 15px !important;
+         	position: fixed !important;
+    		bottom: 20px !important;
+    		left: 20px !important;
+    		z-index: 999 !important;     
+		}	
+
 /* QUICKREPLAY */
 /** DESCRIPTION : change the appearance of the quickreply **/
         .vertical-qr:root #qr .move {
@@ -525,21 +583,28 @@
         .is_thread .board .thread {
             /*** THREAD BODY ***/
             background: transparent !important;
-            border: 1px solid #E7E7E7 !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
             padding: 20px !important;
             margin-top: -5px !important;
             margin-right: 5.1% !important;
-            margin-left: 4.9% !important;
+            margin-left: 5% !important;
         }
         #update-timer,
         #update-status {
             /*** THREAD NAVLINKS ***/
             display: none !important;
         }
-        .style-stats:root #thread-stats, .style-stats:root #updater, .style-stats:root #stats {
+        .style-stats:root #thread-stats, 
+		.style-stats:root #updater, 
+		.style-stats:root #stats {
             border: none !important;
             box-shadow: none !important;
         }
+		#thread-stats span {
+			font-size: 10pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;
+		}
         :root.fixed .is_thread #shortcuts #shortcut-stats {
             color: #FFF !important;
             font-size: 9.5pt !important;
@@ -588,7 +653,8 @@
         .is_thread .navLinks.desktop a {
             color: #FFF !important;
             border-right: 1px solid #212121 !important;
-            font-size: 9pt !important;
+            font-size: 10pt !important;
+			font-stretch: condensed !important;
             font-weight: bold !important;
             padding: 5px 45px 5px 0px !important;
             text-transform: uppercase !important;
@@ -605,18 +671,27 @@
         .quotelink {
             border: none !important;
             color: #DC626F !important;
-            font-weight: bold !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+            font-weight: normal !important;
             text-decoration: none !important;
         }
         .opContainer.opContainer {
             /*** OP ***/
-            background: #FDFDFD !important;
             font-size: 9.5pt !important;
             padding: 20px 0px 20px 20px !important;
             margin-top: 14px !important;
             margin-right: 6px !important;
             margin-left: 8px !important;
         }
+		:root.op-background .postContainer.opContainer {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+			box-shadow: none !important;
+		}
+		.post.op {
+    		background: #FFF !important;
+		}
         #hoverUI .opContainer.opContainer {
             margin: 20px 0px 0px 0px !important;
             padding: 0px 0px 8px 0px !important;
@@ -640,6 +715,11 @@
             margin-right: 6px !important;
             margin-bottom: 6px !important;
         }
+		.postContainer .post.reply {
+			background: #FFF !important;
+    		border: 1px solid #FFF !important;
+			box-shadow: 0px 1px 2px rgba(0,0,0,.05) !important;
+		}
         .recolor-even:root .thread > .replyContainer:nth-of-type(2n):not(.hidden) .post {
             background: #FDFDFD !important;
         }
@@ -655,21 +735,38 @@
             padding: 12px !important;
             margin-bottom: 20px !important;
         }
+		.post .subject {
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;		
+		}
         .nameBlock:not(.capcodeMod) > .name, 
         .com, 
-        post-author {
-            color: #28A9BC !important;
+        .post-author {
+            color: #4694AA !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;
+			letter-spacing: .2px !important;
             margin-right: 8px !important;
             margin-left: 6px !important;
         }
         .postNum {
-            color: #92DBC7 !important;
-            font-weight: bold !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;
+			letter-spacing: .2px !important;
             margin-left: 8px !important;
         }
+        .postNum * {
+            color: #2CC990 !important;
+        }
         .dateTime {
-            color: #7E7E7E !important;
-            font-weight: bold !important;
+            color: #B5AFA2 !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;
+			letter-spacing: .2px !important;
         }
         :root:not(.ua-webkit):not(.ua-blink) .fileText {
             font-size: 9pt !important;
@@ -682,6 +779,9 @@
         .rounded-corners:root .fileThumb img:not(.full-image) {
             border-radius: 1px !important;
         } 
+		.post .postMessage {
+			color: #34495E !important;
+		}
         .fa.fa-minus-square-o {
             /*** MINIMIZE ICON ***/
             display: none !important;
@@ -809,6 +909,21 @@
             content: " ✔✔✔✔✔✔✔✔✔" !important;
             color: #000000 !important;
         }
+		.fileText a {
+			/*** POST FILE HEADER***/
+			color: #60646D !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+		}
+		.fileText .file-info {
+			color: #6797A1 !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+		}
+		.post .fileThumb img {
+			/*** POST FILE PICTURE ***/
+			box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+		}
         a[href="#top"] {
             /*** TOP LINK ***/
             position: fixed !important;
@@ -834,5 +949,5 @@
             bottom: 0px !important;
             margin-left: -2px !important;
             visibility: visible !important;
-         }   
+         }
 }

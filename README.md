@@ -1,6 +1,6 @@
 # Pygmalion-Z
 
-![screenshot](https://i.imgur.com/jYsxTua.jpg)
+![screenshot](https://s1.gifyu.com/images/Screenshot-1222.png)
 Preview of Pygmalion-Z.
 
 About

@@ -34,7 +34,7 @@ Instruction
 <ol>
 <li>First, install <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> (for Mozilla Firefox) or <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">Tampermonkey</a> (for Google Chrome) </li>
 <li>Second, install <a href="https://github.com/ccd0/4chan-x">4chan-x</a> and <a href="github.com/Nebukazar/OneeChan">OneeChan</a></li>
-<li>Import in 4chan-X and OneeChan settings the files you'll in this <a href=" https://mega.nz/#F!958lRB7C!HZKGTiGsDpBmazca5v7JMA">link</a></li>
+<li>Import in 4chan-X and OneeChan settings the files you'll find in this <a href="https://mega.nz/#F!kO4igYiY!xWataLIzufNPuqw0W0t73g">link</a></li>
 </ol>
 
 <strong>Step 4 : Install the font </strong> 

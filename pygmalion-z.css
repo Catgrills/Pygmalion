@@ -20,6 +20,10 @@
             text-decoration: none !important;
             transition: all 0.3s ease-in-out !important;
         }
+		.dialog {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+		}
         .notification {
             background: #216379 !important;
             border-radius: 2px !important;
@@ -93,7 +97,90 @@
         .exlinksOptionsLink.entry {
             opacity: 0 !important;
         }
-   
+		#fourchanx-settings,
+		#oneechan-options {
+			background: #FFF !important;
+		}
+		#fourchanx-settings *,
+		#oneechan-options * {
+			color: #7E7E7E;
+			font-size: 11pt;
+			font-stretch: condensed !important;
+		}
+		#fourchanx-settings nav {
+			background: #34495E !important;
+			padding: 14px 20px 23px 20px !important;
+		}
+		#fourchanx-settings .sections-list,
+		#fourchanx-settings .credits {
+    		color: transparent;
+		}
+		#fourchanx-settings .sections-list a,
+		#fourchanx-settings .credits a {
+			font-size: 12pt !important;
+		}
+		#fourchanx-settings .tab-selected {
+    		color: #FFF !important;
+    		font-weight: normal !important;
+		}
+		#fourchanx-settings .section-container {
+			top: 4.5em;
+			z-index: -1 !important;
+		}
+		#fourchanx-settings legend,
+		#oneechan-options .option.header .option-title {
+			border: none !important;
+			color: #212121 !important;
+			font-size: 15pt !important;
+			font-weight: normal !important;
+		}
+		#fourchanx-settings .suboption-list > div:last-of-type {
+    		background: #FFF !important;
+		}
+		#oneechan-options .tab-item * {
+			background: #FFF !important;
+			color: #212121 !important;
+			font-family: "Roboto" !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			font-weight: normal !important;
+			text-transform: lowercase !important;
+		}
+		#oneechan-options #main-section > .option:nth-of-type(2n), 
+		#oneechan-options #main-section > .option:nth-of-type(2n+1) {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+			padding: 5px 8px !important;
+			margin-bottom: -1px !important;
+		}
+		#oneechan-options .options-button {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+			border-radius: 2px !important;
+			font-family: "Roboto" !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			text-transform: lowercase !important;
+		}
+		.options-close {
+			margin-bottom: 5px !important;
+		}
+		#oneechan-options select, 
+		#oneechan-options input {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+			font-size: 11pt !important;
+			font-family: "Roboto" !important;
+		}
+		.riceCheck,
+		.riceCheck:hover {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+		}
+		input[type="checkbox"]:checked::before, 
+		input[type="checkbox"]:checked + .riceCheck::before {
+    		filter: invert(1) !important;
+		}
 /* HEADER BAR */
 /** DESCRIPTION : change the appearance of the headerbar **/
         #header-bar {
@@ -198,19 +285,29 @@
             color: #FFF !important;
         }
         #shortcuts .dialog:not(#qr):not(#thread-watcher):not(#header-bar) {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
             border-radius: 2px !important;
-            font-size: 10pt !important;
-            padding: 20px !important;
+			box-shadow: none !important;
+			font-stretch: condensed !important;
+            padding: 15px !important;
+        }
+		#watched-threads * {
+			color: #47B39D !important;
+		}
+        #shortcuts .dialog:not(#qr):not(#thread-watcher):not(#header-bar) * {
+			font-size: 11pt !important;
         }
         #shortcuts .dialog:not(#qr):not(#thread-watcher):not(#header-bar) a {
-            color: #000 !important;
+			color: #7E7E7E !important;
         }   
         .fixed-watcher:root #thread-watcher {
             /*** WATCHER ***/
-            font-size: 9.5pt !important;
-            position: fixed;
-            padding: 10px 20px 20px 20px !important;
             border-radius: 2px !important;
+    		box-shadow: none !important;
+            font-size: 9.5pt !important;
+            padding: 10px 20px 20px 20px !important;
+            position: fixed;
             z-index: 9999 !important;
         }
         .dialog:not(#qr):not(#thread-watcher):not(#header-bar),
@@ -404,7 +501,7 @@
         }
         .catalog-mode:root .catalog-stats {
             /*** THREAD STATS ***/
-            background: #7BCAA5 !important;
+            background: #E3C39D !important;
             color: #FFF !important;
             font-size: 8.5pt !important;
             height: 28px !important;
@@ -412,32 +509,48 @@
             padding: 1px 9px !important;
         }
         .catalog-mode:root .catalog-thread.watched .catalog-stats {
-            background: #F67E7D !important;
+            background: #47B39D !important;
         }
+		.catalog-mode:root .catalog-stats span {
+			font-size: 10pt !important;
+			font-stretch: condensed !important;
+		}
+		.catalog-mode:root .catalog-icons > img {
+    		margin-top: 2px !important;
+		}
         .reply-fit-width:root .post .menu-button {
             color: #FFF !important;
+			padding-left: 5px !important;
             opacity: 1 !important;
-            margin-top: -4.5px !important;
+            margin-top: -5.5px !important;
         }
         .reply-fit-width:root .post .menu-button .dialog:not(#qr):not(#thread-watcher):not(#header-bar) {
+			border: 1px solid #EBEBEB !important;
             border-radius: 2px !important;
-            font-size: 10pt !important;
-            padding: 20px !important;
+			box-shadow: none !important;
+			font-stretch: condensed !important;
+            padding: 15px !important;
         }
         .post .menu-button .dialog:not(#qr):not(#thread-watcher):not(#header-bar) * {
-            font-size: 9.5pt !important;
+            font-size: 11pt !important;
         }
         .has-submenu::after {
+			background: no-repeat url("https://i.imgur.com/OygFMxF.png") center !important;
+			background-size: cover !important;
+			border: none !important;
+			padding: 10px 0px 0px 10px !important;
             margin-top: 9px !important;
         }
         .catalog-mode:root .subject {
             /*** THREAD SUBJECT ***/
             background: #FFF !important;
+			border: 1px solid #EBEBEB;
+			border-width: 0px 1px !important;
             color: #60646D !important;
 			font-size: 11pt !important;
 			font-stretch: condensed !important;
 			font-weight: normal !important;
-            padding: 5px 0px !important;
+            padding: 5px 10px !important;
             margin-top: -5px !important;
             margin-right: -13px !important;
             margin-left: -13px !important;
@@ -445,9 +558,11 @@
         .catalog-post > .postMessage {
             /*** THREAD DESCRIPTION ***/
             background: #FFF !important;
-	    font-size: 9pt !important;
+			border: 1px solid #EBEBEB;
+			border-width: 0px 1px 1px 1px !important;
+			font-size: 9pt !important;
             max-height: 100px !important;
-            padding: 0px 5px 10px 5px !important;
+            padding: 0px 15px 10px 15px !important;
             margin-top: -5px !important;
             margin-bottom: -4px !important;
             overflow: hidden !important;
@@ -618,7 +733,7 @@
             padding: 5px 50px 5px 10px !important;
             position: absolute !important;
             left: 100px !important;
-            margin-top: 84px !important;
+            margin-top: 83px !important;
         }
         .centered-links:root:not(.fixed) .is_thread  #shortcuts #shortcut-stats {
             left: -637px !important;

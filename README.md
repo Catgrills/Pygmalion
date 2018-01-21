@@ -11,7 +11,8 @@ About
 
 <i>Pygmalion-Z</i> is a custom stylesheet for <i>4chan</i>.
 
-A custom stylesheet (or userstyles) is a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
+Userstyles are CSS code designed to alter the appearance of one, some, or all sites.
+
 
 Instruction
 -------------------------------
@@ -57,12 +58,7 @@ I use several fonts for my custom stylesheet.
 <li>You can share it, but don't forget to mention me.</li>
 </ol>
 
-Trivia
--------------------------------
-
-I decided to name the script <i>Pygmalion-Z</i> because the mascot of 4chan Yotsuba is a little girl with green hair holding a clover, it reminds me of the famous play Pygmalion and the flower Girl Eliza Doolittle (not as cute as Yotsuba). The <i>Z</i> makes it cooler, like those series where they put a Z to the original title for the second season.
-
 Report
 -------------------------------
 
-This script isn't perfect, some parts of the site weren't modified such as the section in Shop or the F.A.Q section. If you find some elements that weren't tweaked or that you simply want to modify or re-add an element that was removed, don't hesitate to report it in the comments.
+Don't hesitate to report any issues you find while using this userstyle.

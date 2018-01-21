@@ -1,12 +1,15 @@
 # Pygmalion-Z
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1222.png)
-Preview of Pygmalion-Z.
+![screenshot](https://s1.gifyu.com/images/Screenshot-1272.png)
+
+![screenshot](https://s1.gifyu.com/images/Screenshot-1273.png)
+
+Preview of <i>Pygmalion-Z</i>.
 
 About
 -------------------------------
 
-Pygmalion-Z is a custom stylesheet for 4chan.
+<i>Pygmalion-Z</i> is a custom stylesheet for <i>4chan</i>.
 
 A custom stylesheet (or userstyles) is a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
 

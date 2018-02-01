@@ -1072,6 +1072,7 @@
 
     .post .postMessage {
         color: #34495E !important;
+        font-size: 10pt !important;
     }
 
     .fa.fa-minus-square-o {

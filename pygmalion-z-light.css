@@ -903,6 +903,7 @@
         /*** CATALOG NAVIGATION SEARCH ***/
         background: transparent !important;
         border: none !important;
+        color: #EBEBEB !important;
         font-size: 15pt !important;
         font-stretch: condensed !important;
         position: absolute !important;

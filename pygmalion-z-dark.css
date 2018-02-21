@@ -1811,9 +1811,9 @@
         bottom: -4px !important;
     }
 
-    #qr .field[name=" ✔✔✔✔✔✔✔✔✔"],
-    #qr .field[name="Closed"],
-    #qr .field[name="Sticky"] {
+    #qr .field[name="name"],
+    #qr .field[name="email"],
+    #qr .field[name="sub"] {
         background: #383942 !important;
         border: 1px solid #000 !important;
         border-radius: 1px !important;
@@ -1849,7 +1849,7 @@
     #qr-file-button,
     #qr-filename-container,
     #qr-filename-container:hover,
-    #qr input[value="Closed"] {
+    #qr input[value="Submit"] {
         background: #383942 !important;
         border: 1px solid #000 !important;
         border-radius: 1px !important;

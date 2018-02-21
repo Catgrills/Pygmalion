@@ -1507,6 +1507,11 @@
         color: #897399 !important
     }
 
+   	.postNum a:hover {
+    	color: #897399 !important;
+    	opacity: .8 !important;
+	}
+    
     .postNum a[href$="00');"]:after,
     .postNum a[href$="11');"]:after,
     .postNum a[href$="22');"]:after,

@@ -234,7 +234,7 @@
     }
 
     .show-board-list-button {
-        margin-top: -76px !important;
+        margin-top: -82px !important;
     }
 
     #header-bar #full-board-list a {
@@ -629,6 +629,19 @@
         font-family: "Roboto" !important;
         padding-bottom: 4px !important;
         margin-top: -1px !important;
+    }
+    
+    #header-bar .notification {
+    
+        /*** HEADER NOTIFICATIONS ***/
+        font-stretch: condensed !important;
+        text-shadow: none !important;
+        padding: 10px 10px 15px 10px !important;
+    }
+
+    #header-bar .notification * {
+        font-size: 13pt !important;
+        font-weight: normal !important;
     }
 
     /* BANNER */
@@ -1645,8 +1658,6 @@
     .is_arclist .board .container,
     .is_arclist .reply .container,
     :root.op-background .postContainer.opContainer .container {
-        height: 30px !important;
-        overflow: hidden;
         position: absolute !important;
         margin-top: -2px !important;
     }
@@ -1847,11 +1858,15 @@
         font-stretch: condensed !important;
         text-transform: capitalize !important;
     }
-
+    
     #qr-filename-container * {
         color: #7E7E7E !important;
     }
 
+    #qr-filename {
+        font-stretch: condensed !important;
+    }
+    
     /* PAGED/INFINITE SCROLL/ALL THREADS */
 
     /** DESCRIPTION : change the elements of the paged/infinite scrolls/all threads page **/

@@ -3,7 +3,7 @@
 ![screenshot](https://s1.gifyu.com/images/Screenshot-1338.png)
 Dark version
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1340.png)
+![screenshot](https://s1.gifyu.com/images/Screenshot-1341.png)
 Light version
 
 Preview of <i>Pygmalion-Z</i>.

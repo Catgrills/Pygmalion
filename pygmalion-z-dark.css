@@ -163,6 +163,7 @@
     #header-bar #board-list #custom-board-list {
 
         /*** HEADER CUSTOM BOARD LIST ***/
+        font-size: 0px !important;
         width: 70% !important;
         position: absolute !important;
         top: 40% !important;
@@ -174,14 +175,17 @@
         column-gap: 0em !important;
     }
 
-    #header-bar #board-list #custom-board-list a {
-        color: #FFF !important;
+    #header-bar #board-list #custom-board-list a:not(.show-board-list-button) {
         font-size: 18pt !important;
         font-stretch: condensed !important;
         width: auto !important;
         text-align: left !important;
         display: block;
         transition: all .3s ease-in-out !important;
+    }
+
+    #header-bar #board-list #custom-board-list a {
+        color: #FFF !important;
     }
 
     #header-bar #board-list #custom-board-list a:hover {
@@ -234,7 +238,7 @@
     }
 
     .show-board-list-button {
-        margin-top: -84px !important;
+        position: absolute !important;
     }
 
     #header-bar #full-board-list a {
@@ -1071,7 +1075,7 @@
         color: #FFF !important;
         padding-left: 5px !important;
         opacity: 1 !important;
-        margin-top: -8px !important;
+        margin-top: -7px !important;
     }
 
     .is_index .board .catalog-post .catalog-stats .menu-button i::before {

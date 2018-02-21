@@ -1804,7 +1804,7 @@
     #qr .field[name="email"],
     #qr .field[name="sub"] {
         background: #3E4651 !important;
-        border: 1px solid #EBEBEB !important;
+        border: 1px solid #000 !important;
         border-radius: 2px !important;
         color: #FFF !important;
         font-size: 13pt !important;

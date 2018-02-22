@@ -19,7 +19,7 @@ Userstyles are CSS code designed to alter the appearance of one, some, or all si
 Instruction
 -------------------------------
 
-<strong>Step 1 : Install Stylish</strong> 
+<strong>Step 1 : Install Stylish or Stylus</strong> 
 
 <span>Depending of your browser.</span>
 <ol>

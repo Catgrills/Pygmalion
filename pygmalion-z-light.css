@@ -1,6 +1,40 @@
 @-moz-document domain("boards.4chan.org") {
+/* COLORS */
+/** DESCRIPTION : set the colors **/
+	:root {
+        --body-bg: #F0F1F5 !important; 
+        --border: #EBEBEB !important;
+        --border-own: #2C82C9 !important;
+        --border-you: rgba(255, 100, 0, 1) !important;
+        --catalog-hover-bg: #F8F8F8 !important;
+        --dropdown-bg: #212121 !important;
+        --header-bg: #F0F1F5 !important;
+        --input-bg: #F0F1F5 !important;
+    	--post-bg: #FFF !important;
+        --table-bg: #FFF !important;
+        --thumb-bg: #F8F8F8 !important;
+        --watch-thread-bg: #EBBD63 !important;
+        --catalog-hover-color: #212121 !important;
+        --catalog-message-color: #4C4C4C !important;
+        --catalog-stat-color: #60646D !important;
+        --catalog-subject-color: #65878F !important;
+		--current-color: #34495E !important;
+        --dead-color: #D33257 !important;
+        --info-color: #BBB !important;
+        --link-color: #008891 !important;
+        --menu-color: #808080 !important;
+        --name-color: #A34443 !important;
+        --num-color: #897399 !important;
+        --post-color: #7E7E7E !important;
+        --quote-color: #2CC990 !important;
+        --quotelink-color: #897399 !important;
+        --subject-color: #987D3E !important;
+        --you-color: #EB9532 !important;
+        --dropdown-url : url('https://i.imgur.com/OygFMxF.png');
+	}
+	
 /* GENERAL */
-
+	
     /** DESCRIPTION : set the main font and change others elements **/
     * {
         font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
@@ -22,7 +56,7 @@
     }
 
     body {
-        background: #F0F1F5 !important;
+        background: var(--body-bg) !important;
         margin: 0px !important;
     }
 
@@ -79,7 +113,7 @@
 
     a[href="#top"]::before {
         background-color: #D6523C !important;
-        background-image: url("https://s1.gifyu.com/images/top_icon_02.png") !important;
+        background-image: url("https://i.imgur.com/iUcfZuU.png") !important;
         background-position: center 40% !important;
         background-repeat: no-repeat !important;
         background-size: 28px auto !important;
@@ -110,7 +144,8 @@
     :root.rounded-corners.werkTyme:not(.catalog-hover-expand) .catalog-thread,:root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,:root.rounded-corners.catalog-hover-expand .catalog-container:hover .catalog-reply {
         border-radius: 1px !important;
     }
-
+    
+	.archivedIcon.retina,
     #bannerCnt,
     #blotter,
     #boardNavDesktopFoot,
@@ -119,9 +154,13 @@
     .gal-buttons,
     .hide-thread-button,
     .hide-reply-button,
+    .identityIcon.retina,
+    img[title="Closed"],
+    img[title="Sticky"],
     .is_arclist .center,
     .is_thread .postInfo .riceCheck,
     .pagelist.json-index,
+    .party-hat,
     .postInfo .riceCheck,
     .qr-link-container,
     #qr .move,
@@ -129,6 +168,11 @@
     #togglePostFormLink {
         display: none !important;
     }
+    
+	#mascot img {
+    	position: fixed !important;
+    	left: 0px !important;
+	}
 
     /* HEADER */
 
@@ -278,7 +322,7 @@
 
     #header-bar .show-board-list-button::after {
         background-color: #47B39D !important;
-        background-image: url("https://s1.gifyu.com/images/more_icon.png") !important;
+        background-image: url("https://i.imgur.com/JNGrOL0.png") !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 22px auto !important;
@@ -286,7 +330,7 @@
 
     #header-bar .hide-board-list-button::after {
         background-color: #B05F6D !important;
-        background-image: url("https://s1.gifyu.com/images/hide_icon.png") !important;
+        background-image: url("https://i.imgur.com/ZXTSKPA.png") !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 22px auto !important;
@@ -315,8 +359,13 @@
         text-shadow: 0px 1px 2px rgba(0, 0, 0, .5) !important;
     }
 
+  	#header-bar #shortcuts #shortcut-watcher .replies-quoting-you::before,
+    #thread-watcher #watched-threads .replies-quoting-you span {
+    	color: #47D2E9 !important;
+	}
+    
     #header-bar #shortcut-menu > .menu-button {
-        background: no-repeat url("https://s1.gifyu.com/images/dropdown_icon.png") center !important;
+        background: no-repeat var(--dropdown-url) center !important;
         background-size: 15px auto !important;
         height: 9px !important;
         width: 15px !important;
@@ -328,9 +377,9 @@
 
     .shortcut .menu-button #menu,
     .shortcut .menu-button .submenu {
-        background: #FFF !important;
-        color: #7E7E7E !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        color: var(--post-color) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 1px !important;
         padding: 20px 15px !important;
         min-width: 100px !important;
@@ -342,7 +391,7 @@
 
     .shortcut .menu-button #menu .entry,
     .shortcut .menu-button #menu * {
-        color: #808080 !important;
+        color: var(--menu-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         text-transform: lowercase !important;
@@ -355,15 +404,15 @@
 
     .shortcut .menu-button .field,
     .shortcut .menu-button .field.focused {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
     }
 
     #thread-watcher {
 
         /*** HEADER THREAD WATCHER ***/
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 1px !important;
         box-shadow: none !important;
         color: #1BA39C !important;
@@ -371,8 +420,8 @@
     }
 
     #thread-watcher > .move {
-        background: #F0F1F5 !important;
-        border-bottom: 1px solid #EBEBEB !important;
+        background: var(--header-bg) !important;
+        border-bottom: 1px solid var(--border) !important;
         font-size: 15pt !important;
         font-stretch: condensed !important;
         padding: 12px 10px 14px 20px !important;
@@ -385,13 +434,13 @@
     }
 
     #thread-watcher .fa.fa-angle-down {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
     }
 
     #thread-watcher #menu,
     #thread-watcher .submenu {
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 1px !important;
         box-shadow: none !important;
         padding: 20px 15px !important;
@@ -404,7 +453,7 @@
 
     #thread-watcher #menu .entry,
     #thread-watcher #menu * {
-        color: #808080 !important;
+        color: var(--menu-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         text-transform: lowercase !important;
@@ -412,11 +461,11 @@
 
     #thread-watcher .focused.entry {
         background: transparent !important;
-        color: #BEBEBE !important;
+        color: var(--menu-color) !important;
     }
 
     .has-submenu::after {
-        background: no-repeat url("https://i.imgur.com/OygFMxF.png") center !important;
+        background: no-repeat var(--dropdown-url) center !important;
         background-size: cover !important;
         border: none !important;
         padding: 10px 0px 0px 10px !important;
@@ -424,7 +473,7 @@
     }
 
     #thread-watcher .move .close {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 16pt !important;
         padding: 0px 4px;
         top: 10px !important;
@@ -442,7 +491,7 @@
     }
 
     #thread-watcher .current span {
-        color: #34495E !important;
+        color: var(--current-color) !important;
         font-weight: normal !important;
     }
 
@@ -452,20 +501,20 @@
 
     #fourchanx-settings,
     #oneechan-options {
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
     }
 
     #fourchanx-settings *,
     #oneechan-options * {
-        color: #7E7E7E;
+        color: var(--post-color);
         font-size: 14pt;
         font-stretch: condensed !important;
     }
 
     #fourchanx-settings nav {
-        background: #F0F1F5 !important;
-        border-bottom: 1px solid #EBEBEB !important;
+        background: var(--header-bg) !important;
+        border-bottom: 1px solid var(--border) !important;
         padding: 14px 20px 28px 20px !important;
         margin: -3px !important;
     }
@@ -485,14 +534,15 @@
     }
 
     #fourchanx-settings .sections-list a:not(.tab-selected),#fourchanx-settings .credits a {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 14pt !important;
     }
 
     #fourchanx-settings .tab-selected {
-        color: #212121 !important;
+        color: var(--post-color) !important;
         font-size: 14pt !important;
         font-weight: normal !important;
+        opacity: .5;
     }
 
     #fourchanx-settings fieldset {
@@ -508,7 +558,7 @@
     #fourchanx-settings legend,
     #oneechan-options .option.header .option-title {
         border: none !important;
-        color: #423F3F !important;
+        color: var(--post-color) !important;
         font-size: 15pt !important;
         font-weight: normal !important;
     }
@@ -526,8 +576,8 @@
     }
 
     #oneechan-options .tab-item * {
-        background: #FFF !important;
-        color: #212121 !important;
+        background: var(--post-bg) !important;
+        color: var(--post-color) !important;
         font-family: "Roboto" !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
@@ -538,17 +588,17 @@
 
     #oneechan-options #main-section > .option:nth-of-type(2n),
     #oneechan-options #main-section > .option:nth-of-type(2n+1) {
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
         padding: 5px 8px !important;
         margin-bottom: -1px !important;
     }
 
     #oneechan-options .options-button {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-family: "Roboto" !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
@@ -570,10 +620,10 @@
     #oneechan-options input,
     #fourchanx-settings .field,
     #fourchanx-settings select {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 11pt !important;
         font-family: "Roboto" !important;
     }
@@ -589,7 +639,7 @@
     .riceCheck,
     .riceCheck:hover {
         background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        border: 1px solid var(--border) !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
     }
 
@@ -600,7 +650,7 @@
 
     #add-mascot,
     #add-theme {
-        border: 1px solid #EBEBEB !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
         padding: 20px 15px 30px 15px !important;
@@ -608,26 +658,26 @@
 
     #add-mascot label,
     #add-theme label {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-stretch: condensed;
     }
 
     .add-mascot-label input,
     #add-theme input {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 11pt !important;
         font-stretch: condensed !important;
     }
 
     #mascot-buttons-container a,
     add-theme .options-button {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-stretch: condensed !important;
         font-size: 11pt !important;
         font-family: "Roboto" !important;
@@ -650,14 +700,31 @@
 
     /* BANNER */
 
-    /** DESCRIPTION : change the elements of the banner **/:root {
-        --banner: url('https://i.imgur.com/QEKEvkx.jpg');
+    /** DESCRIPTION : change the elements of the banner **/
+    :root {
+        --banner: url('https://i.imgur.com/BZIzz1k.jpg');
+        --banner-a: url("https://i.imgur.com/9bA5Jl6.jpg");
+        --banner-c: url("https://i.imgur.com/4c5m2KO.jpg");
+        --banner-ck: url("https://i.imgur.com/hJ7lLp2.jpg");
+        --banner-e: url("https://i.imgur.com/5pjIJyp.jpg");
+        --banner-g: url("https://i.imgur.com/tpkZt1F.jpg");
+        --banner-gif: url("https://i.imgur.com/8f3meO8.jpg");
+        --banner-h: url("https://i.imgur.com/eHfO884.jpg");
+        --banner-ic: url("https://i.imgur.com/Kx1Yf6j.jpg");
+        --banner-jp: url("https://i.imgur.com/6S4B00D.jpg");
+        --banner-v: url("https://i.imgur.com/op2q9LR.jpg");
+        --banner-vg: url("https://i.imgur.com/a3of6Ak.jpg");
+        --banner-vp: url("https://i.imgur.com/1dmXTwR.jpg");
+        --banner-w: url("https://i.imgur.com/IkkRHg1.jpg");
+        --banner-wg: url("https://i.imgur.com/fn6cmw6.jpg");
+        --banner-wsg: url("https://i.imgur.com/RNeZ7PR.jpg");
     }
 
     .boardBanner {
 
         /*** BANNER CONTAINER ***/
         background-image: var(--banner);
+        background-position: center 22%;
         background-size: cover !important;
         border-bottom: 80px solid #232426;
         height: 200px !important;
@@ -686,7 +753,7 @@
     .board_a .boardBanner {
 
         /*** /A/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_a.png") !important;
+        background-image: var(--banner-a) !important;
         background-position: center 25% !important;
         border-bottom: 80px solid #232426 !important;
     }
@@ -698,7 +765,7 @@
     .board_c .boardBanner {
 
         /*** /C/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_c_02.jpg") !important;
+        background-image: var(--banner-c) !important;
         background-position: center 27% !important;
         border-bottom: 80px solid #473232 !important;
     }
@@ -710,7 +777,7 @@
     .board_ck .boardBanner {
 
         /*** /CK/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_ck_03.jpg") !important;
+        background-image: var(--banner-ck) !important;
         background-position: center 40% !important;
         border-bottom: 80px solid #22202B !important;
     }
@@ -722,7 +789,7 @@
     .board_e .boardBanner {
 
         /*** /E/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_e.jpg") !important;
+        background-image: var(--banner-e) !important;
         background-position: center 36% !important;
         border-bottom: 80px solid #E6567A !important;
     }
@@ -734,7 +801,7 @@
     .board_g .boardBanner {
 
         /*** /G/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_g.jpg") !important;
+        background-image: var(--banner-g) !important;
         background-position: center 90% !important;
         border-bottom: 80px solid #34495E !important;
     }
@@ -746,7 +813,7 @@
     .board_gif .boardBanner {
 
         /*** /GIF/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_gif_02.jpg") !important;
+        background-image: var(--banner-gif) !important;
         background-position: center 40% !important;
         border-bottom: 80px solid #3B2E4A !important;
     }
@@ -758,7 +825,7 @@
     .board_ic .boardBanner {
 
         /*** /IC/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_ic.jpg") !important;
+        background-image: var(--banner-ic) !important;
         background-position: center !important;
         border-bottom: 80px solid #0A373b !important;
     }
@@ -770,7 +837,7 @@
     .board_h .boardBanner {
 
         /*** /H/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_h.jpg") !important;
+        background-image: var(--banner-h) !important;
         background-position: center 56% !important;
         border-bottom: 80px solid #E48C95 !important;
     }
@@ -782,7 +849,7 @@
     .board_jp .boardBanner {
 
         /*** /JP/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_jp.jpg") !important;
+        background-image: var(--banner-jp) !important;
         background-position: center 60% !important;
         border-bottom: 80px solid #BF8069 !important;
     }
@@ -794,7 +861,7 @@
     .board_v .boardBanner {
 
         /*** /V/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_v.jpg") !important;
+        background-image: var(--banner-v) !important;
         background-position: center 30% !important;
         border-bottom: 80px solid #2C82C9 !important;
     }
@@ -806,7 +873,7 @@
     .board_vg .boardBanner {
 
         /*** /VG/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_vg.jpg") !important;
+        background-image: var(--banner-vg) !important;
         background-position: center 27% !important;
         border-bottom: 80px solid #16A085 !important;
     }
@@ -818,7 +885,7 @@
     .board_vp .boardBanner {
 
         /*** /VP/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_vp_02.png") !important;
+        background-image: var(--banner-vp) !important;
         background-position: center 22% !important;
         border-bottom: 80px solid #D26262 !important;
     }
@@ -830,7 +897,7 @@
     .board_w .boardBanner {
 
         /*** /W/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_w_03.png") !important;
+        background-image: var(--banner-w) !important;
         background-position: center 30% !important;
         border-bottom: 80px solid #EBBD63 !important;
     }
@@ -842,7 +909,7 @@
     .board_wg .boardBanner {
 
         /*** /WG/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_wg_04.jpg") !important;
+        background-image: var(--banner-wg) !important;
         background-position: center 69% !important;
         border-bottom: 80px solid #5F5E9C !important;
     }
@@ -854,13 +921,13 @@
     .board_wsg .boardBanner {
 
         /*** /WSG/ BANNER ***/
-        background-image: url("https://s1.gifyu.com/images/banner_wsg.png") !important;
-        background-position: center 20% !important;
-        border-bottom: 80px solid #263D4E !important;
+        background-image: var(--banner-wsg) !important;
+        background-position: center 28% !important;
+        border-bottom: 80px solid #3E4651 !important;
     }
 
     .board_wsg .boardBanner .boardTitle {
-        text-shadow: 4px 3px 0px #212121, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+        text-shadow: 4px 3px 0px #3E4651, 9px 8px 0px rgba(255, 255, 255, .15) !important;
     }
 
     /* CATALOG */
@@ -903,7 +970,7 @@
         /*** CATALOG NAVIGATION SEARCH ***/
         background: transparent !important;
         border: none !important;
-        color: #EBEBEB !important;
+    	color: #EBEBEB !important;
         font-size: 15pt !important;
         font-stretch: condensed !important;
         position: absolute !important;
@@ -912,6 +979,7 @@
     }
 
     .is_index #index-search-clear {
+        color: #FFF !important;
         left: 1em !important;
     }
 
@@ -946,11 +1014,11 @@
     .is_index #hidden-label {
 
         /*** CATALOG NAVIGATION HIDDEN THREAD ***/
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-stretch: condensed !important;
         padding: 10px 15px !important;
         position: fixed !important;
@@ -972,8 +1040,8 @@
     .is_index .board .catalog-post {
 
         /*** CATALOG THREAD ***/
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
         margin: 5px !important;
     }
 
@@ -983,12 +1051,12 @@
     }
 
     :root.catalog-hover-expand .catalog-container:hover > .post {
-        border: 1px solid #EBEBEB !important;
+        border: 1px solid var(--border) !important;
     }
 
     :root.catalog-hover-expand .catalog-container:hover .catalog-reply {
-        background: #F8F8F8 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--catalog-hover-bg) !important;
+        border: 1px solid var(--border) !important;
         font-stretch: condensed !important;
         margin-left: -1px !important;
         margin-right: -1px !important;
@@ -996,13 +1064,13 @@
     }
 
     :root.catalog-hover-expand .catalog-container:hover .catalog-reply > span {
-        color: #212121 !important;
+        color: var(--catalog-hover-color) !important;
         font-style: normal !important;
         font-weight: normal !important;
     }
 
     :root.catalog-hover-expand .catalog-container:hover .catalog-reply .catalog-reply-excerpt {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
     }
 
     :root.catalog-hover-expand .catalog-container:hover .catalog-reply .catalog-reply-preview {
@@ -1012,8 +1080,8 @@
     .is_index .board .catalog-post .catalog-link {
 
         /*** CATALOG THREAD ILLUSTRATION ***/
-        background: #F8F8F8 !important;
-        border-bottom: 1px solid #EBEBEB !important;
+        background: var(--thumb-bg) !important;
+        border-bottom: 1px solid var(--border) !important;
         margin-top: -20px !important;
     }
 
@@ -1036,14 +1104,14 @@
     .is_index .board .catalog-post .catalog-stats {
 
         /*** CATALOG THREAD STATS ***/
-        background: #FFF !important;
-        border-bottom: 1px solid #EBEBEB !important;
-        color: #60646D !important;
+        background: var(--post-bg) !important;
+        border-bottom: 1px solid var(--border) !important;
+        color: var(--catalog-stat-color) !important;
         padding: 10px !important;
     }
 
     .is_index .board .watched .catalog-stats {
-        background: #EBBD63 !important;
+        background: var(--watch-thread-bg) !important;
     }
 
     .is_index .board .catalog-post .catalog-stats span {
@@ -1074,13 +1142,13 @@
     }
 
     .is_index .board .catalog-post .catalog-stats .menu-button i::before {
-        color: #212121 !important;
+        color: var(--dropdown-bg) !important;
     }
 
     .is_index .board .catalog-post .catalog-stats #menu,
     .is_index .board .catalog-post .catalog-stats .submenu {
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 1px !important;
         box-shadow: none !important;
         padding: 20px 15px !important;
@@ -1092,7 +1160,7 @@
 
     .is_index .board .catalog-post .catalog-stats #menu .entry,
     .is_index .board .catalog-post .catalog-stats #menu * {
-        color: #808080 !important;
+        color: var(--menu-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         text-transform: lowercase !important;
@@ -1104,7 +1172,7 @@
     }
 
     .has-submenu::after {
-        background: no-repeat url("https://i.imgur.com/OygFMxF.png") center !important;
+        background: no-repeat var(--dropdown-url) center !important;
         background-size: cover !important;
         border: none !important;
         padding: 10px 0px 0px 10px !important;
@@ -1114,21 +1182,21 @@
     .is_index .board .catalog-post .subject {
 
         /*** CATALOG THREAD SUBJECT ***/
-        background: #FFF !important;
-        color: #65878F !important;
+        background: var(--post-bg) !important;
+        color: var(--catalog-subject-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
     }
 
     .is_index .board .catalog-post .postInfo {
-        background: #FFF !important;
+        background: var(--post-bg) !important;
     }
 
     .is_index .board .catalog-post .postMessage {
-        background: #FFF !important;
-        border-bottom: 1px solid #EBEBEB;
-        color: #4C4C4C !important;
+        background: var(--post-bg) !important;
+        border-bottom: 1px solid var(--border);
+        color: var(--catalog-message-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         padding: 0px 15px 15px 15px !important;
@@ -1141,7 +1209,7 @@
     }
 
     .is_index .board .catalog-post .quote {
-        color: #009933 !important;
+        color: var(--quote-color) !important;
         font-size: 14pt !important;
     }
 
@@ -1158,7 +1226,8 @@
         left: 26px !important;
     }
 
-    .is_thread:nth-of-type(1) > .navLinks a,.is_arclist .navLinks a {
+    .is_thread:nth-of-type(1) > .navLinks a,
+    .is_arclist .navLinks a {
         color: #FFF !important;
         font-size: 15pt !important;
         margin-right: 8px !important;
@@ -1239,28 +1308,28 @@
     .thread .postContainer.opContainer {
 
         /*** THREAD OP ***/
-        background: #FFF !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .05) !important;
     }
 
     :root.op-background .postContainer.opContainer,
     .postContainer.opContainer {
-        background: #FFF !important;
+        background: var(--post-bg) !important;
         border: none !important;
         padding: 10px !important;
     }
 
     :root.force-indent .thread .op,
     .thread .op {
-        background: #FFF !important;
+        background: var(--post-bg) !important;
         margin-top: 70px !important;
         margin-left: 0px !important;
     }
 
     :root.force-indent .op,
     .op {
-        background: #FFF !important;
+        background: var(--post-bg) !important;
         margin-top: 70px !important;
         margin-left: 0px !important;
     }
@@ -1273,9 +1342,9 @@
     :root.op-background .opContainer .postInfo,
     .is_thread .board .opContainer .postInfo,
     .is_index .board .opContainer .postInfo {
-        background: #F0F1F5;
-        border-top: 1px solid #EBEBEB !important;
-        border-bottom: 1px solid #EBEBEB !important;
+        background: var(--header-bg);
+        border-top: 1px solid var(--border) !important;
+        border-bottom: 1px solid var(--border) !important;
         padding: 20px !important;
         position: absolute !important;
         right: 52px;
@@ -1290,13 +1359,13 @@
 
     .is_thread .opContainer.expanded-image .postInfo,
     .is_index .opContainer.expanded-image .postInfo {
-        border-bottom: 1px solid #EBEBEB !important;
+        border-bottom: 1px solid var(--border) !important;
         right: 0px !important;
         left: 0px !important;
     }
 
     .dialog .op .postInfo {
-        background: #F0F1F5 !important;
+        background: var(--header-bg) !important;
         right: 0px !important;
         left: 0px !important;
         margin-top: -112px !important;
@@ -1333,8 +1402,8 @@
     :root.recolor-even .thread > .replyContainer:nth-of-type(2n):not(.hidden) .post,:root.recolor-even .thread .post {
 
         /*** THREAD POST ***/
-        background: #FFF !important;
-        border-color: #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border-color: var(--border) !important;
         border-radius: 1px !important;
     }
 
@@ -1344,16 +1413,16 @@
 
     .is_thread .reply,
     .is_thread .dialog {
-        background: #FFF !important;
-        border-color: #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border-color: var(--border) !important;
         box-shadow: none !important;
         min-width: 1000px;
     }
 
     .is_index .reply,
     .is_index .dialog {
-        background: #FFF !important;
-        border-color: #EBEBEB !important;
+        background: var(--post-bg) !important;
+        border-color: var(--border) !important;
         box-shadow: none !important;
     }
 
@@ -1365,7 +1434,7 @@
 
     :root.highlight-own .yourPost.opContainer,
     :root.highlight-own .yourPost > .reply {
-        border: 1px solid #2C82C9 !important;
+        border: 1px solid var(--border-own) !important;
     }
 
     .dialog .yourPost .postInfo {
@@ -1376,7 +1445,7 @@
 
     :root.highlight-you .quotesYou.opContainer,
     :root.highlight-you .quotesYou > .reply {
-        border: 1px solid rgba(255, 100, 0, 1) !important;
+        border: 1px solid var(--border-you) !important;
     }
 
     :root.post-info .is_thread .board .postInfo,
@@ -1385,14 +1454,15 @@
     :root.post-info .is_index .reply .postInfo {
 
         /*** THREAD POST INFO ***/
-        background: #F0F1F5 !important;
-        border-color: #EBEBEB !important;
+        background: var(--header-bg) !important;
+        border-color: var(--border) !important;
         box-shadow: none !important;
         padding: 18px 20px 20px 20px !important;
     }
 
     .postInfo .warning {
         font-size: 14pt !important;
+        font-stretch: condensed !important;
         font-weight: normal !important;
     }
 
@@ -1422,6 +1492,11 @@
     :root.op-background .postContainer.opContainer .postInfo a:not(.backlink) {
         font-size: 14.5pt !important;
     }
+    
+	.capcode.hand.id_mod {
+    	font-size: 14.5pt !important;
+    	font-weight: normal !important;
+	}
 
     .is_thread .board .subject,
     .is_thread .board .name,
@@ -1457,17 +1532,18 @@
     .is_thread .subject,
     .is_index .subject,
     .is_arclist .subject {
-        color: #987D3E !important
+        color: var(--subject-color) !important
     }
 
     .nameBlock:not(.capcodeMod) > .name,:root.highlight-opQuotes .qmark-op {
-        color: #A34443 !important;
+        color: var(--name-color) !important;
         font-size: 14pt !important;
     }
 
     :root.highlight-youQuotes .postMessage .qmark-you {
-        color: #EB9532 !important;
+        color: var(--you-color) !important;
         font-size: 14pt !important;
+        font-weight: normal !important;
     }
 
     .postInfo .qmark-you {
@@ -1479,7 +1555,7 @@
     }
 
     .qmark-dead {
-        color: #D33257 !important;
+        color: var(--dead-color) !important;
         font-size: 14pt !important;
     }
 
@@ -1492,26 +1568,23 @@
     .is_arclist .dateTime,
     .is_arclist .file-info,
     .is_arclist .file-info span {
-        color: #BBB !important;
+        color: var(--info-color) !important;
     }
 
-    .is_thread .postNum.desktop a[title='0 0 30 30'],
-    .is_thread .postNum.desktop a[title='true'],
+    .is_thread .postNum.desktop a,
     .is_thread .fileText a,
-    .is_index .postNum.desktop a[title='http://www.w3.org/2000/svg'],
-    .is_index .postNum.desktop a[title='rgb(149,165,166)'],
+    .is_index .postNum.desktop a,
     .is_index .fileText a,
-    .is_arclist .postNum.desktop a[title='M14.615,4.928c0.487-0.986,1.284-0.986,1.771,0l2.249,4.554c0.486,0.986,1.775,1.923,2.864,2.081l5.024,0.73c1.089,0.158,1.335,0.916,0.547,1.684l-3.636,3.544c-0.788,0.769-1.28,2.283-1.095,3.368l0.859,5.004c0.186,1.085-0.459,1.553-1.433,1.041l-4.495-2.363c-0.974-0.512-2.567-0.512-3.541,0l-4.495,2.363c-0.974,0.512-1.618,0.044-1.432-1.041l0.858-5.004c0.186-1.085-0.307-2.6-1.094-3.368L3.93,13.977c-0.788-0.768-0.542-1.525,0.547-1.684l5.026-0.73c1.088-0.158,2.377-1.095,2.864-2.081L14.615,4.928z'],
-    .is_arclist .postNum.desktop a[title='0 0 30 30'],
+    .is_arclist .postNum.desktop a,
     .is_arclist .fileText a {
-        color: #897399 !important
+        color: var(--num-color) !important
     }
 
-   	.postNum a:hover {
-    	color: #897399 !important;
+   .postNum a:hover {
+    	color: var(--num-color) !important;
     	opacity: .8 !important;
-	}
-    
+   }
+
     .postNum a[href$="00');"]:after,
     .postNum a[href$="11');"]:after,
     .postNum a[href$="22');"]:after,
@@ -1646,18 +1719,11 @@
 
     .is_thread img[title="Link to this post"],
     .is_thread img[title="Reply to this post"],
-    .is_index img[title=" ✔"],
-    .is_index img[title=" ✔✔✔"],
-    .is_arclist img[title=" ✔✔✔✔"],
-    .is_arclist img[title=" ✔✔✔✔✔"] {
+    .is_index img[title="Sticky"],
+    .is_index img[title="Archived"],
+    .is_arclist img[title="Sticky"],
+    .is_arclist img[title="Archived"] {
         padding-top: 17px !important;
-        margin-right: -5px !important;
-    }
-
-    .is_thread img[title=" ✔✔✔✔✔✔"],
-    .is_index img[title=" ✔✔✔✔✔✔✔"],
-    .is_arclist img[title=" ✔✔✔✔✔✔✔✔"] {
-        padding-top: 26px !important;
         margin-right: -5px !important;
     }
 
@@ -1683,7 +1749,7 @@
     }
 
     :root.reply-fit-width .post .menu-button {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         opacity: 1 !important;
     }
 
@@ -1701,13 +1767,13 @@
     }
 
     .postInfo .menu-button #menu .entry {
-        color: #808080 !important;
+        color: var(--menu-color) !important;
         font-size: 14pt !important;
     }
 
     .postInfo .menu-button #menu .focused.entry {
         background: transparent !important;
-        color: #BEBEBE !important;
+        color: var(--menu-color) !important;
     }
 
     .is_thread .post.reply .file,
@@ -1750,7 +1816,7 @@
     .is_arclist .post .postMessage {
 
         /*** THREAD POST CONTENT ***/
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         padding: 5px 30px 10px 30px !important;
         margin-left: 0 !important;
     }
@@ -1767,7 +1833,7 @@
 
     .is_thread .quotelink,
     .is_index .quotelink {
-        color: #897399 !important;
+        color: var(--quotelink-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
     }
@@ -1782,7 +1848,7 @@
     .is_thread .postMessage > .quote,
     .is_index .postMessage > .quote,
     .is_arclist .postMessage > .quote {
-        color: #009933 !important;
+        color: var(--quote-color) !important;
         font-size: 14pt !important;
     }
 
@@ -1791,8 +1857,9 @@
     .is_index .linkify,
     .is_index .embedder,
     .is_arclist .linkify,
-    .is_arclist .embedder {
-        color: #008891 !important;
+    .is_arclist .embedder,
+    .exlinkified a {
+        color: var(--link-color) !important;
     }
 
     #unread-line {
@@ -1804,7 +1871,7 @@
     #qr {
 
         /*** THREAD QUICK REPLY ***/
-        background: #FFF !important;
+        background: var(--header-bg) !important;
         height: 100% !important;
         width: 30% !important;
         max-width: 100% !important;
@@ -1826,7 +1893,7 @@
     #qr .field[name="sub"] {
         background: #3E4651 !important;
         border: 1px solid #000 !important;
-        border-radius: 2px !important;
+        border-radius: 1px !important;
         color: #FFF !important;
         font-size: 13pt !important;
         font-stretch: condensed !important;
@@ -1834,9 +1901,9 @@
     }
 
     #qr .textarea .field {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
-        color: #7E7E7E !important;
+        background: var(--post-bg) !important;
+        border: 1px solid var(--border) !important;
+        color: var(--post-color) !important;
         font-stretch: condensed !important;
         height: 60vh !important;
         width: 100% !important;
@@ -1852,7 +1919,7 @@
     }
 
     #qr .captcha-counter > a {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-stretch: condensed !important;
     }
 
@@ -1860,17 +1927,17 @@
     #qr-filename-container,
     #qr-filename-container:hover,
     #qr input[value="Submit"] {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
         border-radius: 2px !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 12pt !important;
         font-stretch: condensed !important;
         text-transform: capitalize !important;
     }
     
     #qr-filename-container * {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
     }
 
     #qr-filename {
@@ -1888,11 +1955,11 @@
 
     .is_index .postNum span,
     .is_index .postNum a {
-        color: #53BDB1 !important;
+        color: var(--num-color) !important;
     }
 
     a.summary {
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         font-style: normal !important;
@@ -1907,12 +1974,12 @@
     }
 
     .inline {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--input-bg) !important;
+        border: 1px solid var(--border) !important;
     }
 
     .inline .postContainer {
-        border: 1px solid #EBEBEB;
+        border: 1px solid var(--border);
     }
 
     .inline .postContainer .postInfo {
@@ -1921,12 +1988,17 @@
         margin-left: -2px !important;
     }
 
+    .inline .postContainer .postInfo .container {
+    	display: none !important;
+	}
+    
     .inline .opContainer .postInfo {
         display: none !important;
     }
 
     .inline .opContainer .op {
-        margin-top: 10px !important;
+        position: relative !important;
+        top: -60px !important;
     }
 
     .backlink.forwardlink {
@@ -1937,14 +2009,15 @@
 
     /** DESCRIPTION : change the elements of the archive page **/
     #arc-list {
-        margin: 50px !important;
+        width: 90% !important;
+        margin-top: 50px !important;
     }
 
     #arc-list td {
-        background: #F0F1F5 !important;
-        border: 1px solid #EBEBEB !important;
+        background: var(--table-bg) !important;
+        border: 1px solid var(--border) !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-        color: #7E7E7E !important;
+        color: var(--post-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
         padding: 5px 10px !important;
@@ -1952,17 +2025,19 @@
 
     #arc-list b,
     #arc-list .quotelink {
+        color: var(--quotelink-color) !important;
         font-size: 14pt !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
     }
 
     #arc-list .quote {
-        color: #009933 !important;
+        color: var(--quote-color) !important;
         font-size: 14pt !important;
     }
 
     .is_arclist .dialog {
-        border: 1px solid #EBEBEB !important;
+        border: 1px solid var(--border) !important;
         box-shadow: none !important;
     }
 }

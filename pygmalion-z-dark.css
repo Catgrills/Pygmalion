@@ -360,10 +360,18 @@
             text-shadow: 0px 1px 2px rgba(0, 0, 0, .5) !important;
         }
 
-        	#header-bar #shortcuts #shortcut-watcher .replies-quoting-you::before,
+        #header-bar #shortcuts #shortcut-watcher .replies-quoting-you::before,
         #thread-watcher #watched-threads .replies-quoting-you span {
         	color: #47D2E9 !important;
         }
+	
+	#thread-watcher #watched-threads .dead-thread {
+		opacity: 1 !important;
+	}
+
+	#thread-watcher #watched-threads .dead-thread * {
+		color: #FF6766 !important;
+	}
 
         #header-bar #shortcut-menu > .menu-button {
             background: no-repeat var(--dropdown-url) center !important;
@@ -1559,6 +1567,10 @@
             color: var(--dead-color) !important;
             font-size: 14pt !important;
         }
+	
+    	.postInfo .qmark-dead {
+    		display: none !important;
+	}
 
         .is_thread .dateTime,
         .is_thread .file-info,
@@ -1600,9 +1612,9 @@
             content: " ✔" !important;
             color: #4CAF50 !important;
             font-weight: bold !important;
-            font-size: 14px !important;
+            font-size: 13pt !important;
             position: relative !important;
-            top: -3px !important;
+            top: -2px !important;
         }
 
         .postNum a[href$="000');"]:after,
@@ -1749,17 +1761,24 @@
             padding: 8px !important;
         }
 
-        :root.reply-fit-width .post .menu-button {
-            color: var(--post-color) !important;
-            opacity: 1 !important;
-        }
+	:root.reply-fit-width .post .menu-button,
+	:root:not(.reply-fit-width) .post .menu-button {
+		color: var(--post-color) !important;
+		opacity: 1 !important;
+	}
 
-        :root.reply-fit-width .post .menu-button .fa::before {
-            font-size: 13pt !important;
-            margin-top: -5px !important;
-            margin-right: 10px !important;
-        }
+	:root.reply-fit-width .post .menu-button .fa::before {
+		font-size: 13pt !important;
+		margin-top: -5px !important;
+		margin-right: 10px !important;
+	}
 
+	:root:not(.reply-fit-width) .post .menu-button .fa::before {
+		font-size: 13pt !important;
+		margin-top: -5px !important;
+		margin-left: 0px !important;
+	}
+	
         .postInfo .menu-button #menu,
         .postInfo .menu-button #menu .submenu {
             border-radius: 1px !important;

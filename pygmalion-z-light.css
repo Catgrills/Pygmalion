@@ -9,9 +9,9 @@
             --border-you: rgba(255, 100, 0, 1) !important;
             --catalog-hover-bg: #F8F8F8 !important;
             --dropdown-bg: #212121 !important;
-            --header-bg: #F0F1F5 !important;
+            --header-bg: #F9F9F9 !important;
             --input-bg: #F0F1F5 !important;
-        	--post-bg: #FFF !important;
+            --post-bg: #FFF !important;
             --table-bg: #FFF !important;
             --thumb-bg: #F8F8F8 !important;
             --watch-thread-bg: #EBBD63 !important;
@@ -19,7 +19,7 @@
             --catalog-message-color: #4C4C4C !important;
             --catalog-stat-color: #60646D !important;
             --catalog-subject-color: #65878F !important;
-        	--current-color: #34495E !important;
+            --current-color: #34495E !important;
             --dead-color: #D33257 !important;
             --info-color: #BBB !important;
             --link-color: #008891 !important;

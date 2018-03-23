@@ -1,6 +1,6 @@
 # Pygmalion-Z
 
-<img src="preview_pygmalion-z.png" width="100%"></img>
+<img src="preview_2_pygmalion-z.png" width="100%"></img>
 
 Preview of <i>Pygmalion-Z</i>.
 

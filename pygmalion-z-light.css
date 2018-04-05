@@ -374,7 +374,7 @@
 	}
 
         #header-bar #shortcut-menu > .menu-button {
-            background: no-repeat var(--dropdown-url) center !important;
+            background: no-repeat url('https://i.imgur.com/AN6BKJT.png') center !important;
             background-size: 15px auto !important;
             height: 9px !important;
             width: 15px !important;

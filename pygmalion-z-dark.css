@@ -1933,13 +1933,19 @@
         #qr .field[name="name"],
         #qr .field[name="email"],
         #qr .field[name="sub"] {
-            background: #3E4651 !important;
-            border: 1px solid #000 !important;
+            background: var(--post-bg) !important;
+            border: 1px solid var(--border) !important;
             border-radius: 1px !important;
             color: #FFF !important;
-            font-size: 13pt !important;
+            font-size: 14pt !important;
             font-stretch: condensed !important;
             padding: 10px !important;
+        }
+
+        #qr .field::-moz-placeholder, 
+        ::-moz-placeholder, 
+        #qr-no-file {
+     	    color: var(--post-color) !important;   
         }
 
         #qr .textarea .field {

@@ -34,6 +34,28 @@
 	    --dropdown-url : url('https://i.imgur.com/AN6BKJT.png');
 	}
 
+	    --subject-color: #987D3E !important;
+	    --you-color: #EB9532 !important;
+	    --dropdown-url : url('https://i.imgur.com/AN6BKJT.png');
+	}
+
+        /* GENERAL */
+
+        /** DESCRIPTION : set the main font and change others elements **/
+        * {
+            font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+            font-size: 12pt;
+            text-decoration: none !important;
+        }
+
+        *::-moz-focus-inner {
+            border: 0;
+        }
+
+        input::-moz-placeholder {
+            color: #F0F1F5 !important;
+            font-size: 15pt !important;
+        }
         /* GENERAL */
 
         /** DESCRIPTION : set the main font and change others elements **/
@@ -374,7 +396,7 @@
 	}
 
         #header-bar #shortcut-menu > .menu-button {
-            background: no-repeat var(--dropdown-url) center !important;
+            background: no-repeat url('https://i.imgur.com/AN6BKJT.png') center !important;
             background-size: 15px auto !important;
             height: 9px !important;
             width: 15px !important;

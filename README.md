@@ -30,7 +30,7 @@ Instruction
 <ol>
 <li> Via userstyles (<a href="https://userstyles.org/styles/144764/pygmalion-z-light-4chan-css">light version</a> or <a href="https://userstyles.org/styles/156051/pygmalion-z-dark-4chan-css">dark version</a>) : click the button <i>install Style</i> and it's done.</li>
 <li> Or manually (<a href="https://pastebin.com/raw/zrRmuHtu">light version</a> or <a href="https://pastebin.com/raw/mSXZZGE6">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
-<li><b>(NEW) STYLUS ONLY</b> : Import <a href="https://mega.nz/#F!4TIBUTaK!68UQF79dszA23h5snooTRw">pygmalion-z.json</a> in Stylus by clicking the button <i>Import Styles</i>. You can change theme by clicking the gear icon next to the script name in the managment styles page.</li>
+<li><b>(NEW) STYLUS ONLY</b> : <a href="https://raw.githubusercontent.com/Catgrills/Pygmalion-Z/master/pygmalion-z.user.css">click here</a>.</li>
 </ol>
 
 <strong> Step 3 : Install plugins and scripts </strong>

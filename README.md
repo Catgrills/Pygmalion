@@ -18,20 +18,15 @@ Instruction
 <strong>Step 1 : Install Stylish or Stylus</strong> 
 
 <span>Depending of your browser.</span>
-<ol>
-<li>for Mozilla Firefox : <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/">Stylus</a></li>
-<li>for Google Chrome : <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a> or <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en">Stylus</a></li>
-<li>for Opera : <a href="https://addons.opera.com/en/extensions/details/stylish/">Stylish</a> or <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Stylus</a></li>
-<li>for Safari : <a href="http://sobolev.us/stylish/">Stylish</a></li>
-<li> for Dolphin : <a href="https://play.google.com/store/apps/details?id=ru.pmmlabs.stylish&amp;hl=en">Stylish</a></li>
-</ol>
++ for Mozilla Firefox : <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/">Stylus</a></li>
++ for Google Chrome : <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a> or <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en">Stylus</a>
++ for Opera : <a href="https://addons.opera.com/en/extensions/details/stylish/">Stylish</a> or <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Stylus</a>
++ for Safari : <a href="http://sobolev.us/stylish/">Stylish</a>
++ for Dolphin : <a href="https://play.google.com/store/apps/details?id=ru.pmmlabs.stylish&amp;hl=en">Stylish</a>
 
 <strong>Step 2 : Install the script </strong>
-<ol>
-<li> Via userstyles (<a href="https://userstyles.org/styles/144764/pygmalion-z-light-4chan-css">light version</a> or <a href="https://userstyles.org/styles/156051/pygmalion-z-dark-4chan-css">dark version</a>) : click the button <i>install Style</i> and it's done.</li>
-<li> Or manually (<a href="https://pastebin.com/raw/zrRmuHtu">light version</a> or <a href="https://pastebin.com/raw/mSXZZGE6">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
-<li><b>(NEW) STYLUS ONLY</b> : <a href="https://raw.githubusercontent.com/Catgrills/Pygmalion-Z/master/pygmalion-z.user.css">click here</a>.</li>
-</ol>
++ Via <b>userstyles</b> : <a href="https://userstyles.org/styles/156051/pygmalion-z-dark-4chan-css">Dark theme</a> or <a href="https://userstyles.org/styles/144764/pygmalion-z-light-4chan-css">Light theme</a>
++ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Pygmalion-Z/master/pygmalion-z.user.css">click here</a>
 
 <strong> Step 3 : Install plugins and scripts </strong>
 <ol>

@@ -31,7 +31,7 @@ Instruction
 <strong> Step 3 : Install plugins and scripts </strong>
 <ol>
 <li>First, install <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> (for Mozilla Firefox) or <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">Tampermonkey</a> (for Google Chrome) </li>
-<li>Second, install <a href="https://greasyfork.org/en/scripts/38761-4chan-misc-edition">4chan : Misc Edition</a>, <a href="https://github.com/ccd0/4chan-x">4chan-x</a> and <a href="https://github.com/nebukazar/OneeChan">OneeChan</a></li>
+<li>Second, install <a href="https://greasyfork.org/en/scripts/38761-4chan-misc-edition">4chan : Misc Edition</a>, <a href="https://greasyfork.org/en/scripts/7751-oneechan">OneeChan</a></li>
 <li>Import in 4chan-X and OneeChan settings the files you'll find in this <a href="https://mega.nz/#F!kO4igYiY!xWataLIzufNPuqw0W0t73g">link</a></li>
 </ol>
 

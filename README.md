@@ -35,7 +35,7 @@ Instruction
 <li>Import in 4chan-X and OneeChan settings the files you'll find in this <a href="https://mega.nz/#F!kO4igYiY!xWataLIzufNPuqw0W0t73g">link</a></li>
 </ol>
 
-/!\ IMPORTANT : to solve the loading theme problem, add the following filter to Adblock or uBlock : @@||boards.4chan.org^$csp /!\
+/!\ <strong>IMPORTANT :</strong> to solve the loading theme problem, add the following filter to Adblock or uBlock : @@||boards.4chan.org^$csp /!\
 
 <strong>Step 4 : Install the font </strong> 
 

@@ -74,8 +74,11 @@
 	`
 }
 ==/UserStyle== */
+
 @-moz-document domain("boards.4chan.org") {
-/*[[theme]]*/
+
+	/*[[theme]]*/
+
 	/* GENERAL */
 
 	/** DESCRIPTION : set the main font and change others elements **/
@@ -187,7 +190,8 @@
 	:root.rounded-corners .dd-menu ul,
 	:root.rounded-corners.werkTyme .catalog-thread:not(:hover),
 	:root.rounded-corners.werkTyme:not(.catalog-hover-expand) .catalog-thread,
-	:root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,:root.rounded-corners.catalog-hover-expand .catalog-container:hover .catalog-reply {
+	:root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,
+	:root.rounded-corners.catalog-hover-expand .catalog-container:hover .catalog-reply {
 		border-radius: 1px !important;
 	}
 
@@ -1657,9 +1661,7 @@
 		color: var(--subject-color) !important
 	}
 
-	.nameBlock:not(.capcodeMod) > .name,
-	:root.highlight-opQuotes .qmark-op,
-	.qmark-op {
+	.nameBlock:not(.capcodeMod) > .name,:root.highlight-opQuotes .qmark-op,.qmark-op {
 		color: var(--name-color) !important;
 		font-size: 14pt !important;
 	}
@@ -1851,10 +1853,10 @@
 
 	.is_thread img[title='rgb(242,155,52)'],
 	.is_thread img[title='M14.615,4.928c0.487-0.986,1.284-0.986,1.771,0l2.249,4.554c0.486,0.986,1.775,1.923,2.864,2.081l5.024,0.73c1.089,0.158,1.335,0.916,0.547,1.684l-3.636,3.544c-0.788,0.769-1.28,2.283-1.095,3.368l0.859,5.004c0.186,1.085-0.459,1.553-1.433,1.041l-4.495-2.363c-0.974-0.512-2.567-0.512-3.541,0l-4.495,2.363c-0.974,0.512-1.618,0.044-1.432-1.041l0.858-5.004c0.186-1.085-0.307-2.6-1.094-3.368L3.93,13.977c-0.788-0.768-0.542-1.525,0.547-1.684l5.026-0.73c1.088-0.158,2.377-1.095,2.864-2.081L14.615,4.928z'],
-	.is_index img[title=" ✔"],
-	.is_index img[title=" ✔✔✔"],
-	.is_arclist img[title=" ✔✔✔✔"],
-	.is_arclist img[title=" ✔✔✔✔✔"] {
+	.is_index img[title=' ✔'],
+	.is_index img[title=' ✔✔✔'],
+	.is_arclist img[title=' ✔✔✔✔'],
+	.is_arclist img[title=' ✔✔✔✔✔'] {
 		padding-top: 17px !important;
 		margin-right: -5px !important;
 	}
@@ -2034,8 +2036,8 @@
 		background: var(--body-bg) !important;
 		border: 1px solid var(--border) !important;
 		color: var(--post-color) !important;
-        font-size: 14pt !important;
-        font-stretch: condensed !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	#qr .move label {
@@ -2212,4 +2214,3 @@
 	}
 
 }
-

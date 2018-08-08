@@ -610,7 +610,8 @@
 		border-color: #242424 !important;
 	}
 
-	#fourchanx-settings .sections-list a:not(.tab-selected),#fourchanx-settings .credits a {
+	#fourchanx-settings .sections-list a:not(.tab-selected),
+	#fourchanx-settings .credits a {
 		color: var(--post-color) !important;
 		font-size: 14pt !important;
 	}
@@ -1661,7 +1662,9 @@
 		color: var(--subject-color) !important
 	}
 
-	.nameBlock:not(.capcodeMod) > .name,:root.highlight-opQuotes .qmark-op,.qmark-op {
+	.nameBlock:not(.capcodeMod) > .name,
+	:root.highlight-opQuotes .qmark-op,
+	.qmark-op {
 		color: var(--name-color) !important;
 		font-size: 14pt !important;
 	}

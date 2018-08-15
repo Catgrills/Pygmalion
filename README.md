@@ -1,13 +1,13 @@
-# Pygmalion-Z
+# Pygmalion
 
-<img src="preview_2_pygmalion-z.png" width="100%"></img>
+<img src="preview.png" width="100%"></img>
 
-Preview of <i>Pygmalion-Z</i>.
+Preview of <i>Pygmalion</i>.
 
 About
 -------------------------------
 
-<i>Pygmalion-Z</i> is an user style for <i>4chan</i>.
+<i>Pygmalion</i> is an user style for <i>4chan</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
@@ -23,8 +23,7 @@ Instruction
 + for <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Opera</a>
 
 <strong>Step 2 : Install the script </strong>
-+ Via <b>userstyles</b> : <a href="https://userstyles.org/styles/156051/pygmalion-z-dark-4chan-css">Dark theme</a> or <a href="https://userstyles.org/styles/144764/pygmalion-z-light-4chan-css">Light theme</a>
-+ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Pygmalion-Z/master/pygmalion-z.user.css">click here</a>
++ Directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Pygmalion/master/4chan.user.css">click here</a>
 
 <strong> Step 3 : Install plugins and scripts </strong>
 <ol>

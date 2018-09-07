@@ -7,7 +7,7 @@ Preview of <i>Pygmalion</i>.
 About
 -------------------------------
 
-<i>Pygmalion</i> is an user style for <i>4chan</i>.
+<i>Pygmalion</i> is a user style for <i>4chan</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Pygmalion
 @namespace      https://github.com/Catgrills/Pygmalion
-@version        1.0.6
+@version        1.0.7
 @description    An user style for 4chan called Pygmalion.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -75,7 +75,8 @@
 }
 ==/UserStyle== */
 
-@-moz-document domain("boards.4chan.org") {
+@-moz-document domain("boards.4chan.org"),
+domain("boards.4channel.org") {
 
 	/*[[theme]]*/
 

@@ -178,22 +178,22 @@ domain("boards.4channel.org") {
 		visibility: visible !important;
 	}
 
-    :root.rounded-corners .reply,
-    :root.rounded-corners.op-background .postContainer.opContainer,
-    :root.rounded-corners .dialog:not(#header-bar),
-    :root.rounded-corners .inline,
-    :root.rounded-corners #thread-stats:root.rounded-corners #updater,
-    :root.rounded-corners #menu,
-    :root.rounded-corners .thumb,
-    :root.rounded-corners .fileThumb img:not(.full-image),
-    :root.rounded-corners .catalog-thumb,
-    :root.rounded-corners .dd-menu ul,
-    :root.rounded-corners.werkTyme .catalog-thread:not(:hover),
-    :root.rounded-corners.werkTyme:not(.catalog-hover-expand) .catalog-thread,
-    :root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,
-    :root.rounded-corners.catalog-hover-expand .catalog-container:hover .catalog-reply {
-        border-radius: 1px !important;
-    }
+	:root.rounded-corners .reply,
+	:root.rounded-corners.op-background .postContainer.opContainer,
+	:root.rounded-corners .dialog:not(#header-bar),
+	:root.rounded-corners .inline,
+	:root.rounded-corners #thread-stats:root.rounded-corners #updater,
+	:root.rounded-corners #menu,
+	:root.rounded-corners .thumb,
+	:root.rounded-corners .fileThumb img:not(.full-image),
+	:root.rounded-corners .catalog-thumb,
+	:root.rounded-corners .dd-menu ul,
+	:root.rounded-corners.werkTyme .catalog-thread:not(:hover),
+	:root.rounded-corners.werkTyme:not(.catalog-hover-expand) .catalog-thread,
+	:root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,
+	:root.rounded-corners.catalog-hover-expand .catalog-container:hover .catalog-reply {
+		border-radius: 1px !important;
+	}
 
 	.archivedIcon.retina,
 	#bannerCnt,
@@ -1507,20 +1507,20 @@ domain("boards.4channel.org") {
 		margin-left: -2px !important;
 	}
 
-    .is_thread .board .opContainer .watch-thread-link,
-    .is_index .board .opContainer .watch-thread-link,
-    .dialog .op .postInfo .watch-thread-link {
-        background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' preserveAspectRatio='true' xmlns='http://www.w3.org/2000/svg'><path fill='rgb(149,165,166)' d='M14.615,4.928c0.487-0.986,1.284-0.986,1.771,0l2.249,4.554c0.486,0.986,1.775,1.923,2.864,2.081l5.024,0.73c1.089,0.158,1.335,0.916,0.547,1.684l-3.636,3.544c-0.788,0.769-1.28,2.283-1.095,3.368l0.859,5.004c0.186,1.085-0.459,1.553-1.433,1.041l-4.495-2.363c-0.974-0.512-2.567-0.512-3.541,0l-4.495,2.363c-0.974,0.512-1.618,0.044-1.432-1.041l0.858-5.004c0.186-1.085-0.307-2.6-1.094-3.368L3.93,13.977c-0.788-0.768-0.542-1.525,0.547-1.684l5.026-0.73c1.088-0.158,2.377-1.095,2.864-2.081L14.615,4.928z'/></svg>") !important;
-        padding-top: 21px !important;
-        width: 25px !important;
-        opacity: 1 !important;
-    }
+	.is_thread .board .opContainer .watch-thread-link,
+	.is_index .board .opContainer .watch-thread-link,
+	.dialog .op .postInfo .watch-thread-link {
+		background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' preserveAspectRatio='true' xmlns='http://www.w3.org/2000/svg'><path fill='rgb(149,165,166)' d='M14.615,4.928c0.487-0.986,1.284-0.986,1.771,0l2.249,4.554c0.486,0.986,1.775,1.923,2.864,2.081l5.024,0.73c1.089,0.158,1.335,0.916,0.547,1.684l-3.636,3.544c-0.788,0.769-1.28,2.283-1.095,3.368l0.859,5.004c0.186,1.085-0.459,1.553-1.433,1.041l-4.495-2.363c-0.974-0.512-2.567-0.512-3.541,0l-4.495,2.363c-0.974,0.512-1.618,0.044-1.432-1.041l0.858-5.004c0.186-1.085-0.307-2.6-1.094-3.368L3.93,13.977c-0.788-0.768-0.542-1.525,0.547-1.684l5.026-0.73c1.088-0.158,2.377-1.095,2.864-2.081L14.615,4.928z'/></svg>") !important;
+		padding-top: 21px !important;
+		width: 25px !important;
+		opacity: 1 !important;
+	}
 
-    .is_thread .board .opContainer .watched,
-    .is_index .board .opContainer .watched,
-    .dialog .op .postInfo .watched {
-        background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' preserveAspectRatio='true' xmlns='http://www.w3.org/2000/svg'><path fill='rgb(242,155,52)' d='M14.615,4.928c0.487-0.986,1.284-0.986,1.771,0l2.249,4.554c0.486,0.986,1.775,1.923,2.864,2.081l5.024,0.73c1.089,0.158,1.335,0.916,0.547,1.684l-3.636,3.544c-0.788,0.769-1.28,2.283-1.095,3.368l0.859,5.004c0.186,1.085-0.459,1.553-1.433,1.041l-4.495-2.363c-0.974-0.512-2.567-0.512-3.541,0l-4.495,2.363c-0.974,0.512-1.618,0.044-1.432-1.041l0.858-5.004c0.186-1.085-0.307-2.6-1.094-3.368L3.93,13.977c-0.788-0.768-0.542-1.525,0.547-1.684l5.026-0.73c1.088-0.158,2.377-1.095,2.864-2.081L14.615,4.928z'/></svg>") !important;
-    }
+	.is_thread .board .opContainer .watched,
+	.is_index .board .opContainer .watched,
+	.dialog .op .postInfo .watched {
+		background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' preserveAspectRatio='true' xmlns='http://www.w3.org/2000/svg'><path fill='rgb(242,155,52)' d='M14.615,4.928c0.487-0.986,1.284-0.986,1.771,0l2.249,4.554c0.486,0.986,1.775,1.923,2.864,2.081l5.024,0.73c1.089,0.158,1.335,0.916,0.547,1.684l-3.636,3.544c-0.788,0.769-1.28,2.283-1.095,3.368l0.859,5.004c0.186,1.085-0.459,1.553-1.433,1.041l-4.495-2.363c-0.974-0.512-2.567-0.512-3.541,0l-4.495,2.363c-0.974,0.512-1.618,0.044-1.432-1.041l0.858-5.004c0.186-1.085-0.307-2.6-1.094-3.368L3.93,13.977c-0.788-0.768-0.542-1.525,0.547-1.684l5.026-0.73c1.088-0.158,2.377-1.095,2.864-2.081L14.615,4.928z'/></svg>") !important;
+	}
 
 	:root.recolor-even .thread > .replyContainer:nth-of-type(2n):not(.hidden) .post,:root.recolor-even .thread .post {
 
@@ -1713,132 +1713,132 @@ domain("boards.4channel.org") {
 		opacity: .8 !important;
 	}
 
-    .postNum a:hover {
-        color: var(--num-color) !important;
-        opacity: .8 !important;
-    }
+	.postNum a:hover {
+		color: var(--num-color) !important;
+		opacity: .8 !important;
+	}
 
-    .postNum a[href$="00');"]:after, 
-    .postNum a[href$="11');"]:after,
-    .postNum a[href$="22');"]:after, 
-    .postNum a[href$="33');"]:after, 
-    .postNum a[href$="44');"]:after, 
-    .postNum a[href$="55');"]:after, 
-    .postNum a[href$="66');"]:after, 
-    .postNum a[href$="77');"]:after, 
-    .postNum a[href$="88');"]:after, 
-    .postNum a[href$="99');"]:after {
+	.postNum a[href$="00');"]:after, 
+	.postNum a[href$="11');"]:after,
+	.postNum a[href$="22');"]:after, 
+	.postNum a[href$="33');"]:after, 
+	.postNum a[href$="44');"]:after, 
+	.postNum a[href$="55');"]:after, 
+	.postNum a[href$="66');"]:after, 
+	.postNum a[href$="77');"]:after, 
+	.postNum a[href$="88');"]:after, 
+	.postNum a[href$="99');"]:after {
 
-        /*** DUBS ***/
-        content: ' ✔' !important;
-        color: #4CAF50 !important;
-        font-weight: bold !important;
-        font-size: 13pt !important;
-        position: relative !important;
-        top: -2px !important;
-    }
+		/*** DUBS ***/
+		content: ' ✔' !important;
+		color: #4CAF50 !important;
+		font-weight: bold !important;
+		font-size: 13pt !important;
+		position: relative !important;
+		top: -2px !important;
+	}
 
-    .postNum a[href$="000');"]:after, 
-    .postNum a[href$="111');"]:after, 
-    .postNum a[href$="222');"]:after,
-    .postNum a[href$="333');"]:after, 
-    .postNum a[href$="444');"]:after, 
-    .postNum a[href$="555');"]:after, 
-    .postNum a[href$="666');"]:after,
-    .postNum a[href$="777');"]:after, 
-    .postNum a[href$="888');"]:after, 
-    .postNum a[href$="999');"]:after {
+	.postNum a[href$="000');"]:after, 
+	.postNum a[href$="111');"]:after, 
+	.postNum a[href$="222');"]:after,
+	.postNum a[href$="333');"]:after, 
+	.postNum a[href$="444');"]:after, 
+	.postNum a[href$="555');"]:after, 
+	.postNum a[href$="666');"]:after,
+	.postNum a[href$="777');"]:after, 
+	.postNum a[href$="888');"]:after, 
+	.postNum a[href$="999');"]:after {
 
-        /*** TRIPS ***/
-        content: ' ✔✔✔' !important;
-        color: #FF9800 !important;
-    }
+		/*** TRIPS ***/
+		content: ' ✔✔✔' !important;
+		color: #FF9800 !important;
+	}
 
-    .postNum a[href$="0000');"]:after, 
-    .postNum a[href$="1111');"]:after, 
-    .postNum a[href$="2222');"]:after, 
-    .postNum a[href$="3333');"]:after, 
-    .postNum a[href$="4444');"]:after, 
-    .postNum a[href$="5555');"]:after, 
-    .postNum a[href$="6666');"]:after, 
-    .postNum a[href$="7777');"]:after, 
-    .postNum a[href$="8888');"]:after, 
-    .postNum a[href$="9999');"]:after {
+	.postNum a[href$="0000');"]:after, 
+	.postNum a[href$="1111');"]:after, 
+	.postNum a[href$="2222');"]:after, 
+	.postNum a[href$="3333');"]:after, 
+	.postNum a[href$="4444');"]:after, 
+	.postNum a[href$="5555');"]:after, 
+	.postNum a[href$="6666');"]:after, 
+	.postNum a[href$="7777');"]:after, 
+	.postNum a[href$="8888');"]:after, 
+	.postNum a[href$="9999');"]:after {
 
-        /*** QUADS ***/
-        content: ' ✔✔✔✔' !important;
-        color: #F44336 !important;
-    }
+	/*** QUADS ***/
+		content: ' ✔✔✔✔' !important;
+		color: #F44336 !important;
+	}
 
-    .postNum a[href$="00000');"]:after, 
-    .postNum a[href$="11111');"]:after, 
-    .postNum a[href$="22222');"]:after, 
-    .postNum a[href$="33333');"]:after, 
-    .postNum a[href$="44444');"]:after, 
-    .postNum a[href$="55555');"]:after, 
-    .postNum a[href$="66666');"]:after, 
-    .postNum a[href$="77777');"]:after, 
-    .postNum a[href$="88888');"]:after, 
-    .postNum a[href$="99999');"]:after {
-        content: ' ✔✔✔✔✔' !important;
-        color: #E040FB !important;
-    }
+	.postNum a[href$="00000');"]:after, 
+	.postNum a[href$="11111');"]:after, 
+	.postNum a[href$="22222');"]:after, 
+	.postNum a[href$="33333');"]:after, 
+	.postNum a[href$="44444');"]:after, 
+	.postNum a[href$="55555');"]:after, 
+	.postNum a[href$="66666');"]:after, 
+	.postNum a[href$="77777');"]:after, 
+	.postNum a[href$="88888');"]:after, 
+	.postNum a[href$="99999');"]:after {
+		content: ' ✔✔✔✔✔' !important;
+		color: #E040FB !important;
+	}
 
-    .postNum a[href$="000000');"]:after, 
-    .postNum a[href$="111111');"]:after, 
-    .postNum a[href$="222222');"]:after, 
-    .postNum a[href$="333333');"]:after, 
-    .postNum a[href$="444444');"]:after, 
-    .postNum a[href$="555555');"]:after, 
-    .postNum a[href$="666666');"]:after, 
-    .postNum a[href$="777777');"]:after, 
-    .postNum a[href$="888888');"]:after, 
-    .postNum a[href$="999999');"]:after {
-        content: ' ✔✔✔✔✔✔' !important;
-        color: #651FFF !important;
-    }
+	.postNum a[href$="000000');"]:after, 
+	.postNum a[href$="111111');"]:after, 
+	.postNum a[href$="222222');"]:after, 
+	.postNum a[href$="333333');"]:after, 
+	.postNum a[href$="444444');"]:after, 
+	.postNum a[href$="555555');"]:after, 
+	.postNum a[href$="666666');"]:after, 
+	.postNum a[href$="777777');"]:after, 
+	.postNum a[href$="888888');"]:after, 
+	.postNum a[href$="999999');"]:after {
+		content: ' ✔✔✔✔✔✔' !important;
+		color: #651FFF !important;
+	}
 
-    .postNum a[href$="0000000');"]:after, 
-    .postNum a[href$="1111111');"]:after, 
-    .postNum a[href$="2222222');"]:after, 
-    .postNum a[href$="3333333');"]:after, 
-    .postNum a[href$="4444444');"]:after, 
-    .postNum a[href$="5555555');"]:after,
-    .postNum a[href$="6666666');"]:after, 
-    .postNum a[href$="7777777');"]:after,
-    .postNum a[href$="8888888');"]:after, 
-    .postNum a[href$="9999999');"]:after {
-        content: ' ✔✔✔✔✔✔✔' !important;
-        color: #304FFE !important;
-    }
+	.postNum a[href$="0000000');"]:after, 
+	.postNum a[href$="1111111');"]:after, 
+	.postNum a[href$="2222222');"]:after, 
+	.postNum a[href$="3333333');"]:after, 
+	.postNum a[href$="4444444');"]:after, 
+	.postNum a[href$="5555555');"]:after,
+	.postNum a[href$="6666666');"]:after, 
+	.postNum a[href$="7777777');"]:after,
+	.postNum a[href$="8888888');"]:after, 
+	.postNum a[href$="9999999');"]:after {
+		content: ' ✔✔✔✔✔✔✔' !important;
+		color: #304FFE !important;
+	}
 
-    .postNum a[href$="00000000');"]:after, 
-    .postNum a[href$="11111111');"]:after, 
-    .postNum a[href$="22222222');"]:after, 
-    .postNum a[href$="33333333');"]:after, 
-    .postNum a[href$="44444444');"]:after, 
-    .postNum a[href$="55555555');"]:after, 
-    .postNum a[href$="66666666');"]:after, 
-    .postNum a[href$="77777777');"]:after, 
-    .postNum a[href$="88888888');"]:after, 
-    .postNum a[href$="99999999');"]:after {
-        content: ' ✔✔✔✔✔✔✔✔' !important;
-        color: #2196F3 !important;
-    }
+	.postNum a[href$="00000000');"]:after, 
+	.postNum a[href$="11111111');"]:after, 
+	.postNum a[href$="22222222');"]:after, 
+	.postNum a[href$="33333333');"]:after, 
+	.postNum a[href$="44444444');"]:after, 
+	.postNum a[href$="55555555');"]:after, 
+	.postNum a[href$="66666666');"]:after, 
+	.postNum a[href$="77777777');"]:after, 
+	.postNum a[href$="88888888');"]:after, 
+	.postNum a[href$="99999999');"]:after {
+		content: ' ✔✔✔✔✔✔✔✔' !important;
+		color: #2196F3 !important;
+	}
 
-    .postNum a[href$="000000000');"]:after,
-    .postNum a[href$="111111111');"]:after, 
-    .postNum a[href$="222222222');"]:after, 
-    .postNum a[href$="333333333');"]:after, 
-    .postNum a[href$="444444444');"]:after, 
-    .postNum a[href$="555555555');"]:after, 
-    .postNum a[href$="666666666');"]:after,
-    .postNum a[href$="777777777');"]:after,
-    .postNum a[href$="888888888');"]:after, 
-    .postNum a[href$="999999999');"]:after {
-        content: ' ✔✔✔✔✔✔✔✔✔' !important;
-        color: #000000 !important;
-    }
+	.postNum a[href$="000000000');"]:after,
+	.postNum a[href$="111111111');"]:after, 
+	.postNum a[href$="222222222');"]:after, 
+	.postNum a[href$="333333333');"]:after, 
+	.postNum a[href$="444444444');"]:after, 
+	.postNum a[href$="555555555');"]:after, 
+	.postNum a[href$="666666666');"]:after,
+	.postNum a[href$="777777777');"]:after,
+	.postNum a[href$="888888888');"]:after, 
+	.postNum a[href$="999999999');"]:after {
+		content: ' ✔✔✔✔✔✔✔✔✔' !important;
+		color: #000000 !important;
+	}
     
 	:root:not(.ua-webkit):not(.ua-blink) .fileText {
 		max-width: 100% !important;
@@ -1966,19 +1966,19 @@ domain("boards.4channel.org") {
 		margin-left: 0 !important;
 	}
 
-    .is_thread .post .postMessage,
-    .is_thread .post .postMessage a:not(.quotelink),
-    .is_index .post .postMessage,
-    .is_index .post .postMessage a:not(.quotelink),
-    .is_arclist .post .postMessage,
-    .is_arclist .post .postMessage a:not(.quotelink),
-    :root.op-background .postContainer.opContainer .postMessage,
-    :root.op-background .postContainer.opContainer .postMessage a,
-    .is_thread s,
-    .is_index s {
-        font-size: 14pt !important;
-        font-stretch: condensed !important;
-    }
+	.is_thread .post .postMessage,
+	.is_thread .post .postMessage a:not(.quotelink),
+	.is_index .post .postMessage,
+	.is_index .post .postMessage a:not(.quotelink),
+	.is_arclist .post .postMessage,
+	.is_arclist .post .postMessage a:not(.quotelink),
+	:root.op-background .postContainer.opContainer .postMessage,
+	:root.op-background .postContainer.opContainer .postMessage a,
+	.is_thread s,
+	.is_index s {
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+	}
 
 	.is_thread .quotelink,
 	.is_index .quotelink {

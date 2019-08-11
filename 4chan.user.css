@@ -2050,9 +2050,9 @@ domain("boards.4channel.org") {
 		bottom: -4px !important;
 	}
 
-	#qr .field[name=' ✔✔✔✔✔✔'],
-	#qr .field[name=' ✔✔✔✔✔✔✔'],
-	#qr .field[name=' ✔✔✔✔✔✔✔✔'] {
+	#qr .field[name="name"],
+	#qr .field[name="email"],
+	#qr .field[name="sub"] {
 		background: var(--post-bg) !important;
 		border: 1px solid var(--border) !important;
 		border-radius: 1px !important;

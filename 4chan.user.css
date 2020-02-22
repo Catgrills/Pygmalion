@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Pygmalion
 @namespace      https://github.com/Catgrills/Pygmalion
-@version        1.0.8
+@version        1.0.9
 @description    An user style for 4chan called Pygmalion.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -289,13 +289,13 @@ domain("boards.4channel.org") {
 	}
 
 	#header-bar #board-list #custom-board-list a:hover {
-		color: #F29B34 !important;
+		color: #27ae60 !important;
 		transition: all .3s ease-in-out !important;
 	}
 
 	#header-bar #board-list #custom-board-list .current {
 		border-bottom: none !important;
-		color: #F29B34 !important;
+		color: #27ae60 !important;
 		font-weight: normal !important;
 	}
 
@@ -355,12 +355,12 @@ domain("boards.4channel.org") {
 	}
 
 	#header-bar #full-board-list .a:hover {
-		color: #F29B34 !important;
+		color: #27ae60 !important;
 		transition: all .3s ease-in-out !important;
 	}
 
 	#header-bar #full-board-list .current {
-		color: #F29B34 !important;
+		color: #27ae60 !important;
 		font-weight: normal !important;
 	}
 
@@ -806,7 +806,7 @@ domain("boards.4channel.org") {
 
 	/** DESCRIPTION : change the elements of the banner **/:root {
 		--banner: url('https://i.imgur.com/BZIzz1k.jpg');
-		--banner-a: url("https://i.imgur.com/9bA5Jl6.jpg");
+		--banner-a: url("https://i.imgur.com/5zmzyc4.jpg");
 		--banner-c: url("https://i.imgur.com/4c5m2KO.jpg");
 		--banner-ck: url("https://i.imgur.com/hJ7lLp2.jpg");
 		--banner-e: url("https://i.imgur.com/5pjIJyp.jpg");
@@ -815,11 +815,12 @@ domain("boards.4channel.org") {
 		--banner-h: url("https://i.imgur.com/eHfO884.jpg");
 		--banner-ic: url("https://i.imgur.com/Kx1Yf6j.jpg");
 		--banner-jp: url("https://i.imgur.com/6S4B00D.jpg");
-		--banner-v: url("https://i.imgur.com/op2q9LR.jpg");
-		--banner-vg: url("https://i.imgur.com/XG6Ybus.jpg");
-		--banner-vp: url("https://i.imgur.com/1dmXTwR.jpg");
-		--banner-w: url("https://i.imgur.com/IkkRHg1.jpg");
-		--banner-wg: url("https://i.imgur.com/fn6cmw6.jpg");
+        --banner-toy: url("https://imgur.com/hJvjWm7.jpg");
+		--banner-v: url("https://i.imgur.com/6FTuSYF.png");
+		--banner-vg: url("https://i.imgur.com/W9t9RYg.jpg");
+		--banner-vp: url("https://i.imgur.com/0vXqiaD.jpg");
+		--banner-w: url("https://i.imgur.com/GNmXbof.jpg");
+		--banner-wg: url("https://i.imgur.com/avTTwET.jpg");
 		--banner-wsg: url("https://i.imgur.com/RNeZ7PR.jpg");
 	}
 
@@ -848,7 +849,7 @@ domain("boards.4channel.org") {
 		text-shadow: 4px 3px 0px #212121, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 		text-transform: lowercase !important;
 	}
-
+    
 	.boardSubtitle {
 		display: none !important;
 	}
@@ -857,12 +858,12 @@ domain("boards.4channel.org") {
 
 		/*** /A/ BANNER ***/
 		background-image: var(--banner-a) !important;
-		background-position: center 25% !important;
-		border-bottom: 80px solid #232426 !important;
+		background-position: center 20% !important;
+		border-bottom: 80px solid #b33f3f !important;
 	}
 
 	.board_a .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #212121, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #43ac66, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_c .boardBanner {
@@ -882,11 +883,11 @@ domain("boards.4channel.org") {
 		/*** /CK/ BANNER ***/
 		background-image: var(--banner-ck) !important;
 		background-position: center 40% !important;
-		border-bottom: 80px solid #22202B !important;
+		border-bottom: 80px solid #cf9200 !important;
 	}
 
 	.board_ck .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #7D6962, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #33302b, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_e .boardBanner {
@@ -961,16 +962,28 @@ domain("boards.4channel.org") {
 		text-shadow: 4px 3px 0px #6E5D4B, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
+	.board_toy .boardBanner {
+
+		/*** /TOY/ BANNER ***/
+		background-image: var(--banner-toy) !important;
+		background-position: center 12% !important;
+		border-bottom: 80px solid #262423 !important;
+	}
+
+	.board_toy .boardBanner .boardTitle {
+		text-shadow: 4px 3px 0px #57713f, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+	}
+    
 	.board_v .boardBanner {
 
 		/*** /V/ BANNER ***/
 		background-image: var(--banner-v) !important;
-		background-position: center 30% !important;
-		border-bottom: 80px solid #2C82C9 !important;
+		background-position: center 48% !important;
+		border-bottom: 80px solid #997f62 !important;
 	}
 
 	.board_v .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #0F3057, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #65584a, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_vg .boardBanner {
@@ -978,47 +991,47 @@ domain("boards.4channel.org") {
 		/*** /VG/ BANNER ***/
 		background-image: var(--banner-vg) !important;
 		background-position: center 38% !important;
-		border-bottom: 80px solid #16A085 !important;
+		border-bottom: 80px solid #25262c !important;
 	}
 
 	.board_vg .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #3B7E87, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #1e398f, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_vp .boardBanner {
 
 		/*** /VP/ BANNER ***/
 		background-image: var(--banner-vp) !important;
-		background-position: center 22% !important;
-		border-bottom: 80px solid #D26262 !important;
+		background-position: center 75% !important;
+		border-bottom: 80px solid #2087ce !important;
 	}
 
 	.board_vp .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #D6523C, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #13b33d, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_w .boardBanner {
 
 		/*** /W/ BANNER ***/
 		background-image: var(--banner-w) !important;
-		background-position: center 30% !important;
-		border-bottom: 80px solid #EBBD63 !important;
+		background-position: center 46% !important;
+		border-bottom: 80px solid #343537 !important;
 	}
 
 	.board_w .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #EB9532, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #397b7c, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_wg .boardBanner {
 
 		/*** /WG/ BANNER ***/
 		background-image: var(--banner-wg) !important;
-		background-position: center 69% !important;
-		border-bottom: 80px solid #5F5E9C !important;
+		background-position: center 60% !important;
+		border-bottom: 80px solid #52507f !important;
 	}
 
 	.board_wg .boardBanner .boardTitle {
-		text-shadow: 4px 3px 0px #8B4D93, 9px 8px 0px rgba(255, 255, 255, .15) !important;
+		text-shadow: 4px 3px 0px #252325, 9px 8px 0px rgba(255, 255, 255, .15) !important;
 	}
 
 	.board_wsg .boardBanner {
@@ -1026,7 +1039,7 @@ domain("boards.4channel.org") {
 		/*** /WSG/ BANNER ***/
 		background-image: var(--banner-wsg) !important;
 		background-position: center 28% !important;
-		border-bottom: 80px solid #3E4651 !important;
+		border-bottom: 80px solid #b3b818 !important;
 	}
 
 	.board_wsg .boardBanner .boardTitle {
@@ -1128,6 +1141,10 @@ domain("boards.4channel.org") {
 		top: 30px !important;
 		right: 30px !important;
 		z-index: 999 !important;
+	}
+    
+	.is_index #hidden-label a {
+		color: #2980b9 !important;
 	}
 
 	.is_index #hidden-label * {
@@ -1533,6 +1550,10 @@ domain("boards.4channel.org") {
 	:root.recolor-even .thread > .replyContainer:nth-of-type(2n):not(.hidden) .post {
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .05) !important;
 	}
+	
+	.qphl {
+		outline-color: #16a085 !important;
+	}
 
 	.is_thread .reply,
 	.is_thread .dialog {
@@ -1548,12 +1569,18 @@ domain("boards.4channel.org") {
 		border-color: var(--border) !important;
 		box-shadow: none !important;
 	}
+	
+	:root.reply-hide .thread > .expanded-image > .reply, 
+	:root.reply-hide .thread > .hasInline > .reply {
+		margin-left: 0px !important;
+	}
 
 	.is_thread .threadContainer,
 	.is_index .threadContainer {
 		border-left: 1px dashed #BEBEBE !important;
 		margin-left: 16px !important;
 	}
+	
 
 	:root.highlight-own .yourPost.opContainer,
 	:root.highlight-own .yourPost > .reply {

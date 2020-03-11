@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Pygmalion
 @namespace      https://github.com/Catgrills/Pygmalion
-@version        1.0.9
+@version        1.1.0
 @description    An user style for 4chan called Pygmalion.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -1416,6 +1416,7 @@ domain("boards.4channel.org") {
 	#globalMessage {
 
 		/*** THREAD ANNOUNCEMENT MESSAGE ***/
+        	width: 600px !important;
 		margin-top: 40px !important;
 		margin-bottom: -40px !important;
 	}
@@ -1425,6 +1426,10 @@ domain("boards.4channel.org") {
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
+	}
+	
+	.hide-announcement-button.fa.fa-minus-square {
+		margin-top: -2px !important;
 	}
 
 	:root.op-background .thread .postContainer.opContainer,

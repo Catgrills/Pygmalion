@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Pygmalion
 @namespace      https://github.com/Catgrills/Pygmalion
-@version        1.1.0
+@version        1.1.1
 @description    An user style for 4chan called Pygmalion.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -1413,24 +1413,45 @@ domain("boards.4channel.org") {
 		display: none;
 	}
 
+
 	#globalMessage {
 
 		/*** THREAD ANNOUNCEMENT MESSAGE ***/
-        	width: 600px !important;
-		margin-top: 40px !important;
-		margin-bottom: -40px !important;
+		background: var(--post-bg) !important;
+		border: 1px solid var(--border) !important;
+		position: fixed !important;
+		left: 10px;
+		bottom: 10px !important;
+		width: 700px;
+		z-index: 9999 !important;
 	}
 
 	#globalMessage * {
-		color: #42729B !important;
+		color: var(--post-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
-	
-	.hide-announcement-button.fa.fa-minus-square {
-		margin-top: -2px !important;
+    
+	#globalMessage h4,
+	#globalMessage h5 {
+		padding: 0px 10px !important;
 	}
+
+	.hide-announcement-button.fa.fa-minus-square {
+		width: 100%;
+		text-align: right;
+		margin-left: -5px !important;
+	}
+
+	.hide-announcement-button.fa-minus-square::before {
+		background: url('https://imgur.com/4GlrMN7.png') no-repeat 50% 50%;
+		background-size: cover;
+		content: "ddd";
+		color: transparent;
+		filter: brightness(0) var(--invert) !important;
+	}
+
 
 	:root.op-background .thread .postContainer.opContainer,
 	.thread .postContainer.opContainer {
